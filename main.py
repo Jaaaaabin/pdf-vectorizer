@@ -20,13 +20,18 @@ def main():
     p.add_argument("--config", type=Path)
     p.add_argument("-o", "--output", type=Path, help="Override output path")
 
-    p = sub.add_parser("process", help="Full pipeline: extract → chunk → embed")
+    p = sub.add_parser("chunk", help="Chunk text.json → chunks.json (reads existing extract output)")
+    p.add_argument("input", type=Path, help="Original PDF path (used to locate text.json)")
+    p.add_argument("--config", type=Path)
+
+    p = sub.add_parser("embed", help="Embed chunks.json → embeddings.npz (reads existing chunk output)")
+    p.add_argument("input", type=Path, help="Original PDF path (used to locate chunks.json)")
+    p.add_argument("--config", type=Path)
+
+    p = sub.add_parser("process", help="Full pipeline: extract → chunk → embed (resumes from existing steps)")
     p.add_argument("input", type=Path, help="PDF file or directory")
     p.add_argument("--config", type=Path)
     p.add_argument("--recursive", "-r", action="store_true")
-
-    p = sub.add_parser("init", help="Create data directories")
-    p.add_argument("--config", type=Path)
 
     p = sub.add_parser("info", help="Show current configuration")
     p.add_argument("--config", type=Path)
@@ -40,8 +45,9 @@ def main():
         return {
             "check":   run_check,
             "extract": run_extract,
+            "chunk":   run_chunk,
+            "embed":   run_embed,
             "process": run_process,
-            "init":    run_init,
             "info":    run_info,
         }[args.command](args)
     except Exception as e:
@@ -105,6 +111,94 @@ def run_extract(args):
     return 0
 
 
+def run_chunk(args):
+    import json
+    from src.configuration import load_config, get_chunking_config, get_paths_config
+    from src.text_chunker import chunk_text, get_chunk_statistics
+
+    config = load_config(args.config)
+    out_dir = Path(get_paths_config(config).get("processed", "data/processed")) / args.input.stem
+    text_path = out_dir / "text.json"
+    chunks_path = out_dir / "chunks.json"
+
+    if not text_path.exists():
+        print_error(f"text.json not found at {text_path} — run extract first")
+        return 1
+
+    pages = json.loads(text_path.read_text(encoding="utf-8"))
+    cfg = get_chunking_config(config)
+    print_info(f"Chunking {args.input.stem} ({len(pages)} pages)...")
+
+    chunks = chunk_text(
+        pages,
+        strategy=cfg.get("strategy", "recursive"),
+        chunk_size=cfg.get("chunk_size", 1000),
+        chunk_overlap=cfg.get("chunk_overlap", 200),
+    )
+
+    stats = get_chunk_statistics(chunks)
+    print_success(f"Created {stats['total_chunks']} chunks, avg {stats['avg_length']:.0f} chars")
+
+    chunks_path.write_text(
+        json.dumps([c.to_dict() for c in chunks], indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+    print_info(f"Saved to: {chunks_path}")
+    return 0
+
+
+def run_embed(args):
+    import json
+
+    print_info("Initialising embed step...")
+
+    from src.configuration import load_config, get_vectorization_config, get_paths_config
+    print_info("Config loaded.")
+
+    config = load_config(args.config)
+    out_dir = Path(get_paths_config(config).get("processed", "data/processed")) / args.input.stem
+    chunks_path = out_dir / "chunks.json"
+
+    if not chunks_path.exists():
+        print_error(f"chunks.json not found at {chunks_path} — run chunk first")
+        return 1
+
+    chunks_raw = json.loads(chunks_path.read_text(encoding="utf-8"))
+    print_info(f"Loaded {len(chunks_raw)} chunks from {chunks_path.name}")
+
+    print_info("Loading ML stack (torch + sentence-transformers) — this takes ~20s on first call...")
+    from src.text_chunker import Chunk
+    from src.vectorizer import vectorize_chunks, save_embeddings
+    print_info("ML stack ready.")
+
+    chunks = [Chunk(**d) for d in chunks_raw]
+
+    cfg = get_vectorization_config(config)
+    fmt = cfg.get("output_format", "numpy")
+    model_name = cfg.get("model_name", "all-MiniLM-L6-v2")
+    batch_size = cfg.get("batch_size", 32)
+    embeddings_path = out_dir / ("embeddings.npz" if fmt == "numpy" else "embeddings.json")
+
+    print_info(f"Model     : {model_name}")
+    print_info(f"Batch size: {batch_size}")
+    print_info(f"Output    : {embeddings_path.name}")
+
+    embeddings = vectorize_chunks(
+        chunks,
+        model_type=cfg.get("model_type", "sentence_transformers"),
+        model_name=model_name,
+        batch_size=batch_size,
+        openai_api_key=cfg.get("openai_api_key"),
+    )
+    save_embeddings(embeddings, chunks, embeddings_path, format=fmt,
+                    include_metadata=cfg.get("include_metadata", True))
+
+    from src.utils import format_size, get_file_size
+    print_success(f"Done — {len(embeddings)} embeddings, dim {embeddings.shape[1]}, "
+                  f"{format_size(get_file_size(embeddings_path))}")
+    return 0
+
+
 def run_process(args):
     from src.pipeline import PDFVectorizationPipeline
 
@@ -135,14 +229,6 @@ def run_process(args):
     print_error(f"Invalid path: {input_path}")
     return 1
 
-
-def run_init(args):
-    from src.configuration import load_config, ensure_paths_exist
-    load_config(args.config)
-    for name, path in ensure_paths_exist().items():
-        print_info(f"  {name}: {path}")
-    print_success("Directories ready.")
-    return 0
 
 
 def run_info(args):
