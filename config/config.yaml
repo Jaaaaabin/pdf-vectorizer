@@ -1,0 +1,56 @@
+# PDF Vectorization Pipeline Configuration
+# Environment variables can be used with syntax: ${VAR_NAME:default_value}
+
+# Data paths (relative to project root)
+data:
+  raw: data/raw              # Input PDFs directory
+  processed: data/processed  # Output directory for processed results
+
+# Text extraction settings
+extraction:
+  method: pymupdf  # Options: pymupdf, pdfplumber, ocr
+  ocr_enabled: false  # Enable OCR for scanned PDFs
+  ocr_language: eng  # Tesseract language code
+  extract_images: false  # Extract embedded images
+  extract_tables: false  # Extract tables separately
+
+# Text chunking settings
+chunking:
+  strategy: recursive  # Options: recursive, semantic, fixed
+  chunk_size: 1000  # Target chunk size in characters
+  chunk_overlap: 200  # Overlap between chunks
+  separators:
+    - "\n\n"  # Paragraph breaks
+    - "\n"    # Line breaks
+    - ". "    # Sentences
+    - " "     # Words
+
+# Vectorization settings
+vectorization:
+  # Embedding model configuration
+  model_type: sentence_transformers  # Options: sentence_transformers, openai, cohere
+  model_name: ${EMBEDDING_MODEL:all-MiniLM-L6-v2}  # Default model
+  
+  # OpenAI settings (if using OpenAI)
+  openai_api_key: ${OPENAI_API_KEY:}
+  openai_model: text-embedding-3-small
+  
+  # Batch processing
+  batch_size: 32  # Number of texts to embed at once
+  
+  # Output format
+  output_format: numpy  # Options: numpy, json, chromadb, faiss
+  include_metadata: true  # Include source info with embeddings
+
+# Storage settings (optional)
+storage:
+  use_vector_db: false  # Store in vector database
+  db_type: chromadb  # Options: chromadb, faiss
+  db_path: data/processed/vector_db
+  collection_name: pdf_embeddings
+
+# Processing settings
+processing:
+  parallel: true  # Enable parallel processing
+  num_workers: 4  # Number of parallel workers
+  verbose: true  # Print progress messages
