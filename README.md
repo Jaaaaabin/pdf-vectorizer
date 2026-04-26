@@ -17,15 +17,26 @@ source .venv/bin/activate   # Linux/Mac
 .venv\Scripts\activate      # Windows
 ```
 
-## Commands
+## Scripts
+
+| Script | Purpose |
+|---|---|
+| `extract.py` | PDF → `text.json` |
+| `chunk.py` | `text.json` → `chunks.json` |
+| `vect.py` | `chunks.json` → `embeddings.npz` |
+| `process.py` | full pipeline + check + info |
+
+## Running
 
 ```bash
-uv run python main.py check                    # verify imports and config
-uv run python main.py extract data/raw/doc.pdf # step 1: PDF → text.json
-uv run python main.py chunk   data/raw/doc.pdf # step 2: text.json → chunks.json
-uv run python main.py process data/raw/doc.pdf # full pipeline (resumes from existing steps)
-uv run python main.py process data/raw/ -r     # batch, recursive
-uv run python main.py info                     # show loaded configuration
+uv run python extract.py data/raw/doc.pdf      # step 1
+uv run python chunk.py   data/raw/doc.pdf      # step 2
+uv run python vect.py    data/raw/doc.pdf      # step 3
+
+uv run python process.py run   data/raw/doc.pdf  # full pipeline
+uv run python process.py run   data/raw/ -r      # batch, recursive
+uv run python process.py check                   # verify imports and config
+uv run python process.py info                    # show loaded configuration
 ```
 
 ## Output Structure
@@ -40,7 +51,7 @@ data/processed/
     └── embeddings.npz   # vectors
 ```
 
-`process` skips steps whose output already exists — run `extract` and `chunk` first to validate before embedding.
+`process.py run` skips steps whose output already exists — run `extract.py` and `chunk.py` individually to validate before embedding.
 
 ## Configuration
 
@@ -51,8 +62,8 @@ Key knobs:
 | Setting | Default | Notes |
 |---|---|---|
 | `extraction.method` | `pymupdf` | `pdfplumber` for tables, `ocr` for scanned |
-| `chunking.chunk_size` | `1000` | chars per chunk |
-| `chunking.chunk_overlap` | `200` | ~10–20% of chunk_size |
+| `chunking.chunk_size` | `512` | chars per chunk |
+| `chunking.chunk_overlap` | `128` | ~10–20% of chunk_size |
 | `vectorization.model_type` | `sentence_transformers` | `openai` requires API key |
 | `vectorization.model_name` | `all-MiniLM-L6-v2` | override via `EMBEDDING_MODEL` in `.env` |
 
@@ -89,7 +100,7 @@ uv sync --upgrade        # upgrade all packages
 uv add <pkg>             # add a package
 uv remove <pkg>          # remove a package
 uv pip list              # list installed
-uv run python main.py …  # run without activating venv
+uv run python process.py … # run without activating venv
 ```
 
 ## Load Embeddings

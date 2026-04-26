@@ -5,6 +5,7 @@
 #   OpenAIVectorizer           – OpenAI embeddings API
 #   save_embeddings            – save embeddings to various formats
 
+from contextlib import nullcontext
 from typing import List, Dict, Any, Optional
 import numpy as np
 from pathlib import Path
@@ -176,39 +177,20 @@ class OpenAIVectorizer:
         print_info(f"Encoding {len(texts)} chunks with OpenAI {self.model_name}...")
         
         embeddings = []
-        
-        # Process in batches
         total_batches = (len(texts) + self.batch_size - 1) // self.batch_size
-        
-        if show_progress:
-            progress = ProgressContext(
-                total=total_batches,
-                desc="Calling OpenAI API",
-            )
-            progress.__enter__()
-        else:
-            progress = None
-        
-        try:
+        ctx = ProgressContext(total=total_batches, desc="Calling OpenAI API") if show_progress else nullcontext()
+
+        with ctx as progress:
             for i in range(0, len(texts), self.batch_size):
                 batch = texts[i:i + self.batch_size]
-                
-                # Call OpenAI API
                 response = self.client.embeddings.create(
                     input=batch,
                     model=self.model_name,
                 )
-                
-                # Extract embeddings
-                batch_embeddings = [item.embedding for item in response.data]
-                embeddings.extend(batch_embeddings)
-                
+                embeddings.extend(item.embedding for item in response.data)
                 if progress:
                     progress.update(1)
-        finally:
-            if progress:
-                progress.__exit__(None, None, None)
-        
+
         return np.array(embeddings)
 
 

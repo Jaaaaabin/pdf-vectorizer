@@ -15,8 +15,8 @@ extraction:
 chunking:
   strategy: recursive            # recursive: splits on paragraphs → lines → sentences → words
                                  # fixed: splits purely by character count, ignores structure
-  chunk_size: 1000               # maximum characters per chunk
-  chunk_overlap: 200             # characters carried over from previous chunk (keeps context at boundaries)
+  chunk_size: 512               # maximum characters per chunk
+  chunk_overlap: 128             # characters carried over from previous chunk (keeps context at boundaries)
                                  # rule of thumb: 10–20% of chunk_size
   separators:                    # ordered list of split points for the recursive strategy
     - "\n\n"                     # paragraph break — tried first

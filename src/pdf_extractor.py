@@ -209,19 +209,17 @@ def extract_with_ocr(
         pages = []
         
         for page_num, image in progress_iter(enumerate(images), total=len(images), desc="OCR pages"):
-                # Run OCR
-                text = pytesseract.image_to_string(image, lang=language)
-                
-                pages.append({
-                    "page_number": page_num + 1,
-                    "text": text,
-                    "char_count": len(text),
-                    "metadata": {
-                        "ocr": True,
-                        "language": language,
-                        "dpi": dpi,
-                    }
-                })
+            text = pytesseract.image_to_string(image, lang=language)
+            pages.append({
+                "page_number": page_num + 1,
+                "text": text,
+                "char_count": len(text),
+                "metadata": {
+                    "ocr": True,
+                    "language": language,
+                    "dpi": dpi,
+                }
+            })
         
         return pages
     except Exception as e:
