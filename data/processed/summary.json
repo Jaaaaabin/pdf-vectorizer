@@ -1,0 +1,42 @@
+[
+  {
+    "pdf": "data/raw/1.pdf",
+    "status": "success",
+    "pages": 3,
+    "text_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/1/text.json",
+    "chunks": 31,
+    "chunks_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/1/chunks.json",
+    "embeddings": 31,
+    "embeddings_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/1/embeddings.npz"
+  },
+  {
+    "pdf": "data/raw/2.pdf",
+    "status": "success",
+    "pages": 3,
+    "text_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/2/text.json",
+    "chunks": 19,
+    "chunks_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/2/chunks.json",
+    "embeddings": 19,
+    "embeddings_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/2/embeddings.npz"
+  },
+  {
+    "pdf": "data/raw/3.pdf",
+    "status": "success",
+    "pages": 24,
+    "text_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/3/text.json",
+    "chunks": 108,
+    "chunks_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/3/chunks.json",
+    "embeddings": 108,
+    "embeddings_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/3/embeddings.npz"
+  },
+  {
+    "pdf": "data/raw/4.pdf",
+    "status": "success",
+    "pages": 2,
+    "text_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/4/text.json",
+    "chunks": 7,
+    "chunks_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/4/chunks.json",
+    "embeddings": 7,
+    "embeddings_file": "/Users/wujiabin/dev/pdf-vectorizer/data/processed/4/embeddings.npz"
+  }
+]

@@ -1,0 +1,1082 @@
+[
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n\u0018\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n1\nGENERAL PROVISIONS\n1\t General Provisions\n1.1 \t SCOPE\nThis Guide to Wood Construction in High Wind Areas: 110 MPH Exposure B Wind Zone (Guide) establishes \na specific set of prescriptive, wind-resistive structural requirements for one- and two-family wood-frame \nresidential buildings of sizes and shapes specified in the “Applicability” section (1.2) of this chapter. The",
+    "chunk_id": 0,
+    "source_page": 1,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 1
+    }
+  },
+  {
+    "text": "residential buildings of sizes and shapes specified in the “Applicability” section (1.2) of this chapter. The \nprovisions of this Guide are directed toward ensuring structural integrity for resisting wind loads. In addition, \nprovisions of this Guide are derived from the wind provisions found in the ANSI/AF&PA 2001 Wood Frame \nConstruction Manual (WFCM) for One- and Two-Family Dwellings.\nWind load requirements of this Guide are based on 110 mile per hour, 3-second-gust wind speeds for Exposure",
+    "chunk_id": 1,
+    "source_page": 1,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 1
+    }
+  },
+  {
+    "text": "Wind load requirements of this Guide are based on 110 mile per hour, 3-second-gust wind speeds for Exposure \nB locations.  Buildings located in Exposure C shall be designed in accordance with the WFCM.\nStructural elements not complying with the conditions contained in this Guide shall be designed in accordance \nwith the WFCM or the governing building code.\nThe provisions of this Guide are not intended to preclude the use of other materials or methods of construction.",
+    "chunk_id": 2,
+    "source_page": 1,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 1
+    }
+  },
+  {
+    "text": "The provisions of this Guide are not intended to preclude the use of other materials or methods of construction. \nWhen alternative methods or materials are used, design loads and capacities shall be determined in accordance \nwith the WFCM or the governing building code.\nTabulated values in this Guide shall be permitted to be interpolated unless otherwise noted in the applicable \ntable footnotes.\nDesign Concepts\nThis Guide relies on the following concepts:",
+    "chunk_id": 3,
+    "source_page": 1,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 1
+    }
+  },
+  {
+    "text": "table footnotes.\nDesign Concepts\nThis Guide relies on the following concepts:\nn\t Roofs, ceilings and floors are designed as diaphragms, which receive lateral loads from roof and exterior \nwalls (assuming the wind blowing from any direction) and transfer these loads to shear walls. \nn\t Exterior walls are designed to resist wind forces and transfer the lateral forces to diaphragms. Exterior walls, \nfoundations, and connections shall be designed to resist lateral and uplift loads received from the roof by",
+    "chunk_id": 4,
+    "source_page": 1,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 1
+    }
+  },
+  {
+    "text": "foundations, and connections shall be designed to resist lateral and uplift loads received from the roof by \nmeans of a continuous load path. Exterior walls are designed to resist wind loads assuming flexible finishes.\nn\t Except for openings, exterior walls are designed as entirely sheathed with wood structural panels or \nstructural fiberboard panels, including areas above and/or below openings. \nn\t Openings shall not exceed nominal 6'-8\" in height.",
+    "chunk_id": 5,
+    "source_page": 1,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 1
+    }
+  },
+  {
+    "text": "n\t Openings shall not exceed nominal 6'-8\" in height. \no\t Exception: Opening heights of up to 8' shall be permitted when 5% is added to the percent full-height \nsheathing requirements in Tables 10 and 11 (See pages 18 and 19).\nn\t The tabulated wind requirements in this document are based on fully enclosed buildings where openings \nare designed for the appropriate wind loads. Where required by the governing building code, protection of",
+    "chunk_id": 6,
+    "source_page": 1,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 1
+    }
+  },
+  {
+    "text": "are designed for the appropriate wind loads. Where required by the governing building code, protection of \nopenings shall be provided to maintain a fully enclosed building envelope.\nn\t The foundation provisions specified in this Guide are limited to the attachment of the building to the \nfoundation. An adequate foundation system shall be provided to resist all required loads. Engineered and \nprescriptive design of the foundation for gravity, lateral, and uplift loads, including uplift and hold down",
+    "chunk_id": 7,
+    "source_page": 1,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 1
+    }
+  },
+  {
+    "text": "prescriptive design of the foundation for gravity, lateral, and uplift loads, including uplift and hold down \nanchorage, shall be provided in accordance with the governing building code.\nGuide to Wood Construction in High Wind Areas",
+    "chunk_id": 8,
+    "source_page": 1,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 1
+    }
+  },
+  {
+    "text": "\u0018\nAMERICAN WOOD COUNCIL\n110 MPH EXPOSURE B WIND ZONE110\nFigure 1.  Master Building Frame (For Illustrative Purposes Only)\nNOTE\nContinuous Load Path. The interconnection \nof all framing elements is critical to a wind-\nresistive building. A continuous load path of interconnected \nframing elements from footings and foundation walls to floors, \nwalls, and roof framing shall be provided. \nGENERAL PROVISIONS",
+    "chunk_id": 9,
+    "source_page": 2,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 2
+    }
+  },
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n\u0018\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n1\nGENERAL PROVISIONS\n1.2\t APPLICABILITY\nBuilding Height\nThe building shall not exceed two stories or \na mean roof height of 33 feet, measured from \naverage grade to average roof elevation  \n(See Figure 2). \nFor purposes of determining uplift and \nlateral bracing requirements, the roof shall be \nconsidered an additional story when the roof \nslope exceeds 6 in 12. The maximum roof slope",
+    "chunk_id": 10,
+    "source_page": 3,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 3
+    }
+  },
+  {
+    "text": "considered an additional story when the roof \nslope exceeds 6 in 12. The maximum roof slope \nis 12 in 12.\nBuilding Dimension\nn\t The maximum building dimension (L) shall not be greater than 80 feet.\nn\t The minimum building dimension (W) shall not be greater than 80 feet.  \nn\t The maximum span (horizontal projection) of the roof trusses or rafters covered under the scope of this \nGuide are limited to 36 feet; however, combinations of these systems can be used for a total inscribed \ndimension of 80 feet.",
+    "chunk_id": 11,
+    "source_page": 3,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 3
+    }
+  },
+  {
+    "text": "Guide are limited to 36 feet; however, combinations of these systems can be used for a total inscribed \ndimension of 80 feet.\nBuilding Shape\nn\t Rectangular Buildings. Design provisions in this Guide assume that buildings are rectangular in shape.  \nWalls shall be permitted to be offset by a maximum of 4 ft. (such as projecting bays, inset porches, or other \nirregular shapes) without requiring detailing.\nn\t Non-rectangular Buildings. In this Guide, non-rectangular buildings are designed as a rectangular",
+    "chunk_id": 12,
+    "source_page": 3,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 3
+    }
+  },
+  {
+    "text": "n\t Non-rectangular Buildings. In this Guide, non-rectangular buildings are designed as a rectangular \nbuilding with dimensions that inscribe the non-\nrectangular building for purposes of determining lateral \nresistance requirements (See Figure 3).  \no\t Aspect ratios for these buildings shall be calculated \nas shown in Table 1 (page 6) and Figure 4.  \no\t The longest inscribed building dimension shall \nbe assumed to be the building length, L, and the \nshortest inscribed building dimension shall be",
+    "chunk_id": 13,
+    "source_page": 3,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 3
+    }
+  },
+  {
+    "text": "be assumed to be the building length, L, and the \nshortest inscribed building dimension shall be \nassumed to be the building width, W. \no\t The required length of full-height exterior \nsheathing in Section 4.3 is to be distributed in each \nwall line segment in proportion to the segment \nlength divided by the overall building dimension.  \nHold downs shall be placed at each end of wall line \nsegments.\no\t For conditions where non-rectangular buildings \nmust be designed as separate structures joined at",
+    "chunk_id": 14,
+    "source_page": 3,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 3
+    }
+  },
+  {
+    "text": "segments.\no\t For conditions where non-rectangular buildings \nmust be designed as separate structures joined at \ncommon walls, the WFCM should be used.\nFigure 2.  Mean Roof Height (MRH)\nFigure 3.  Inscribed Building Dimensions",
+    "chunk_id": 15,
+    "source_page": 3,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 3
+    }
+  },
+  {
+    "text": "\u0018\nAMERICAN WOOD COUNCIL\nGENERAL PROVISIONS\n110 MPH EXPOSURE B WIND ZONE110\nFigure 4.  Building Aspect Ratios\nBuilding Aspect Ratio (L/W)\n1.00\n1.25\n1.50\n1.75\n2.00\n2.25\n2.50\n2.75\n3.00\nBuilding \nWidth, W (ft.)\nMaximum Building Length, L (ft.)\n12\n12\n15\n18\n21\n24\n27\n30\n33\n36\n16\n16\n20\n24\n28\n32\n36\n40\n44\n48\n20\n20\n25\n30\n35\n40\n45\n50\n55\n60\n24\n24\n30\n36\n42\n48\n54\n60\n66\n72\n28\n28\n35\n42\n49\n56\n63\n70\n77\n80\n32\n32\n40\n48\n56\n64\n72\n80\n80\n—\n36\n36\n45\n54\n63\n72\n80\n—\n—\n—\n40\n40\n50\n60\n70\n80\n­—\n—\n—\n—\n50\n50\n62\n75\n80\n­—\n­—\n—\n—\n—\n60\n60\n75\n80",
+    "chunk_id": 16,
+    "source_page": 4,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 4
+    }
+  },
+  {
+    "text": "77\n80\n32\n32\n40\n48\n56\n64\n72\n80\n80\n—\n36\n36\n45\n54\n63\n72\n80\n—\n—\n—\n40\n40\n50\n60\n70\n80\n­—\n—\n—\n—\n50\n50\n62\n75\n80\n­—\n­—\n—\n—\n—\n60\n60\n75\n80\n­—\n­—\n­—\n—\n—\n—\n70\n70\n80\n­—\n­—\n­—\n­—\n—\n—\n—\n80\n80\n­—\n­—\n­—\n­—\n­—\n—\n—\n—\n \n1.3\t FRAMING CONNECTIONS  \nGeneral framing connections shall be in accordance with the requirements of Table 2.  Specific connections \nrequired for wind-resistant construction are provided with the assembly descriptions in other sections of this",
+    "chunk_id": 17,
+    "source_page": 4,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 4
+    }
+  },
+  {
+    "text": "required for wind-resistant construction are provided with the assembly descriptions in other sections of this \nGuide. Where more restrictive connection requirements exist in the building code for other loading conditions, \nsuch as for gravity or seismic resistance, they shall apply.\nTable 1.  Maximum Building Lengths for Permitted Building Aspect Ratios",
+    "chunk_id": 18,
+    "source_page": 4,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 4
+    }
+  },
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n7\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n1\nGENERAL PROVISIONS\nJoint Description\nNumber of \nCommon Nails\nNumber of \nBox Nails\nNail Spacing\nRoof Framing\nBlocking to Rafter (Toe-nailed)\nRim Board to Rafter (End-nailed)\n2- 8d\n2-16d\n2-10d\n3-16d\neach end\neach end\nWall Framing\nTop Plates at Intersections  (Face-nailed)\nStud to Stud  (Face-nailed)\nHeader to Header (Face-nailed)\n4-16d\n2-16d\n16d\n5-16d\n2-16d\n16d\nat joints  \n24\" o.c.",
+    "chunk_id": 19,
+    "source_page": 5,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 5
+    }
+  },
+  {
+    "text": "Stud to Stud  (Face-nailed)\nHeader to Header (Face-nailed)\n4-16d\n2-16d\n16d\n5-16d\n2-16d\n16d\nat joints  \n24\" o.c.\n16\" o.c. along edges\nFloor Framing\nJoist to Sill, Top Plate or Girder (Toe-nailed) (Fig. 14)\nBlocking to Joist (Toe-nailed)\nBlocking to Sill or Top Plate (Toe-nailed)\nLedger Strip to Beam or Girder (Face-nailed)\nJoist on Ledger to Beam (Toe-nailed)\nBand Joist to Joist (End-nailed) (Fig. 14)\nBand Joist to Sill or Top Plate (Toe-nailed) (Fig. 14)\n4- 8d\n2- 8d\n3-16d\n3-16d\n3- 8d\n3-16d\n2-16d\n4-10d",
+    "chunk_id": 20,
+    "source_page": 5,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 5
+    }
+  },
+  {
+    "text": "Band Joist to Sill or Top Plate (Toe-nailed) (Fig. 14)\n4- 8d\n2- 8d\n3-16d\n3-16d\n3- 8d\n3-16d\n2-16d\n4-10d\n2-10d\n4-16d\n4-16d\n3-10d\n4-16d\n3-16d\nper joist\neach end\neach block\neach joist\nper joist\nper joist\nper foot\nRoof Sheathing\nWood Structural Panels\nrafters or trusses spaced up to 16\" o.c.\nrafters or trusses spaced over 16\" o.c.\ngable endwall rake or rake truss w/o gable overhang\ngable endwall rake or rake truss w/ structural \noutlookers\ngable endwall rake or rake truss w/ lookout blocks\n8d\n8d\n8d\n8d \n8d\n10d",
+    "chunk_id": 21,
+    "source_page": 5,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 5
+    }
+  },
+  {
+    "text": "outlookers\ngable endwall rake or rake truss w/ lookout blocks\n8d\n8d\n8d\n8d \n8d\n10d\n10d\n10d\n10d \n10d\n6\" edge / 6\" field \n4\" edge / 4\" field\n6\" edge / 6\" field\n6\" edge / 6\" field \n4\" edge / 4\" field\nCeiling Sheathing\nGypsum Wallboard\n5d coolers\n-\n7\" edge / 10\" field\nWall Sheathing\nWood Structural Panels\nstuds spaced up to 24\" o.c.\n1/2\" and 25/32\" Fiberboard Panels\n1/2\" Gypsum Wallboard\n8d\n8d1\n5d coolers\n10d\n–\n–\n6\" edge / 12\" field \n3\" edge / 6\" field\n7\" edge / 10\" field\nFloor Sheathing\nWood Structural Panels",
+    "chunk_id": 22,
+    "source_page": 5,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 5
+    }
+  },
+  {
+    "text": "8d\n8d1\n5d coolers\n10d\n–\n–\n6\" edge / 12\" field \n3\" edge / 6\" field\n7\" edge / 10\" field\nFloor Sheathing\nWood Structural Panels\n1\" or less\ngreater than 1\"\n8d\n10d\n10d\n16d\n6\" edge / 12\" field\n6\" edge / 6\" field\nTable 2.  General Nailing Schedule\n1  Corrosion resistant 11 gage roofing nails and 16 gage staples are permitted, check IBC for additional requirements.\nNails. Unless otherwise stated, sizes given for nails are common wire sizes. Box and pneumatic nails of equivalent",
+    "chunk_id": 23,
+    "source_page": 5,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 5
+    }
+  },
+  {
+    "text": "Nails. Unless otherwise stated, sizes given for nails are common wire sizes. Box and pneumatic nails of equivalent  \ndiameter and equal or greater length to the specified common nails may be substituted unless otherwise prohibited.",
+    "chunk_id": 24,
+    "source_page": 5,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 5
+    }
+  },
+  {
+    "text": "8\nAMERICAN WOOD COUNCIL\nFOUNDATION ANCHORAGE\n110 MPH EXPOSURE B WIND ZONE110\n2\t Foundation Anchorage\n2.1 \t GENERAL LOADS\nThe house shall be anchored to the foundation system to resist the loads in Table 3 and the hold down \nrequirement in Section 4.3. For pile and girder foundation systems or pier and beam foundation systems that \nsupport the floor joists on top of the girder or beam, the Stemwall Foundation loads in Table 3 shall be used.",
+    "chunk_id": 25,
+    "source_page": 6,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 6
+    }
+  },
+  {
+    "text": "support the floor joists on top of the girder or beam, the Stemwall Foundation loads in Table 3 shall be used.  \nWhen the floor joists are hung on the sides of the girder or beam with proprietary joist hangers, the Slab-on-\nGrade loads in Table 3 shall be used. Ledgers are not permitted.\nTable 3.  Foundation Anchorage Loads\nStemwall Foundations2\nBuilding Aspect Ratio (L/W)\nSlab-on-Grade \nFoundations3\nRaised-Floor \nFoundation \nSupporting:\nUplift1\n(plf)\nLateral\n(plf)\n1.00\n1.25\n1.50\n1.75\n2.00\n2.25\n2.50\n2.75",
+    "chunk_id": 26,
+    "source_page": 6,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 6
+    }
+  },
+  {
+    "text": "Foundations3\nRaised-Floor \nFoundation \nSupporting:\nUplift1\n(plf)\nLateral\n(plf)\n1.00\n1.25\n1.50\n1.75\n2.00\n2.25\n2.50\n2.75\n3.00\nShear (plf)\nRoof, Ceiling, \nand One \nFloor\n217\n132\n201\n252\n302\n352\n403\n453\n503\n553\n604\n730\nRoof, Ceiling, \nand Two \nFloors\n157\n132\n316\n395\n474\n553\n633\n712\n791\n870\n949\n730\n1\t For non-loadbearing walls, uplift connections need not exceed 60 plf.\n2  Shear connection requirements in the maximum building dimension (L) need not exceed the tabulated values for L/W=1.00.",
+    "chunk_id": 27,
+    "source_page": 6,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 6
+    }
+  },
+  {
+    "text": "2  Shear connection requirements in the maximum building dimension (L) need not exceed the tabulated values for L/W=1.00. \n3  Shear connection requirements are based on a required sheathing nail spacing of 3\" o.c. in Tables 10-11.  For reduced wood \nstructural panel sheathing nailing requirements of 4\" and 6\" o.c. and for fiberboard sheathing, the shear loads can be reduced.\n2.2\t ANCHOR BOLTS\nWhere 5/8\" anchor bolts are used to resist uplift, lateral, and shear loads provided in Table 3, the anchor bolts",
+    "chunk_id": 28,
+    "source_page": 6,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 6
+    }
+  },
+  {
+    "text": "Where 5/8\" anchor bolts are used to resist uplift, lateral, and shear loads provided in Table 3, the anchor bolts \nshall be installed per Table 4 using 3\" x 3\" x 1/4\" plate washers (See Figure 5).\nTable 4.  Anchor Bolt Spacings\nStemwall Foundations1\nBuilding Aspect Ratio (L/W)\nSlab-on-Grade \nFoundations\nRaised-Floor \nFoundation \nSupporting:\n1.00\n1.25\n1.50\n1.75\n2.00\n2.25\n2.50\n2.75\n3.00\n5/8\" Anchor Bolt Spacing (in.)\nRoof, Ceiling, \nand One \nFloor\n72\n71\n59\n51\n44\n39\n35\n32\n30\n24\nRoof, Ceiling, \nand Two \nFloors",
+    "chunk_id": 29,
+    "source_page": 6,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 6
+    }
+  },
+  {
+    "text": "5/8\" Anchor Bolt Spacing (in.)\nRoof, Ceiling, \nand One \nFloor\n72\n71\n59\n51\n44\n39\n35\n32\n30\n24\nRoof, Ceiling, \nand Two \nFloors\n56\n45\n38\n32\n28\n25\n23\n21\n19\n24\n1 \tThe anchor bolt spacing in the maximum building dimension (L) need not be less than the tabulated spacing for L/W=1.00.",
+    "chunk_id": 30,
+    "source_page": 6,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 6
+    }
+  },
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n9\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n2\nFOUNDATION ANCHORAGE\n2.3 \tANCHORAGE AT OPENINGS\n Additional anchorage shall be installed on each side of an opening to resist the loads in Table 9 (page 16 and 17).\nFigure 5.  Anchor Bolts Resisting Uplift, Lateral, and Shear Loads.",
+    "chunk_id": 31,
+    "source_page": 7,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 7
+    }
+  },
+  {
+    "text": "10\nAMERICAN WOOD COUNCIL\nFLOORS\n110 MPH EXPOSURE B WIND ZONE110\nFigure 7.  Setback Limits for Loadbearing Wall or Shear Wall and Limit on Loadbearing Wall Offset from Support\n3 \t Floors\n3.1 GENERAL\nn\t Framing Member Span.   \nSingle spans of floor framing \nmembers shall not exceed 26 \nfeet.\nn\t Floor Openings. Floor openings \nshall not exceed the lesser of \n12 feet or 50% of the building \ndimension (See Figure 6).\n3.2 \tWood FLOOR \t\n\t\nJOIST Systems\nn\t Floor Joists. Floor joists shall",
+    "chunk_id": 32,
+    "source_page": 8,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 8
+    }
+  },
+  {
+    "text": "dimension (See Figure 6).\n3.2 \tWood FLOOR \t\n\t\nJOIST Systems\nn\t Floor Joists. Floor joists shall \nbe sized in accordance with the \ngoverning building code.\nn\t Floor Joists That Support  \nLoadbearing Walls.  \nLoadbearing walls parallel \nto joists shall be directly supported by beams, girders, or other loadbearing walls. Loadbearing walls \nperpendicular to joists shall not be offset from supporting girders, beams, or other loadbearing walls by \nmore than the depth of the joists (See Figure 7).",
+    "chunk_id": 33,
+    "source_page": 8,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 8
+    }
+  },
+  {
+    "text": "more than the depth of the joists (See Figure 7).\nn\t Cantilevered Floor Joists. Lumber joists shall be located directly over studs except at beams and headers.\nFigure 6.  Floor Diaphragm Opening Limits",
+    "chunk_id": 34,
+    "source_page": 8,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 8
+    }
+  },
+  {
+    "text": "Figure 9. Floor Bracing\nAMERICAN FOREST & PAPER ASSOCIATION\n11\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n3\nFLOORS \nn\t Cantilevered Floor Joists that Support \nLoadbearing or Shear Wall. Overhang lengths of \ncantilevered floor joists supporting a loadbearing or \nshear wall at the end of the cantilever \nshall be limited to the depth, d, of \nthe joists (See Figure 8). \n \n \n3.3 WOOD I-JOIST \nFLOOR SYSTEMS\nWood I-joist floor systems shall \ncomply with requirements set",
+    "chunk_id": 35,
+    "source_page": 9,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 9
+    }
+  },
+  {
+    "text": "the joists (See Figure 8). \n \n \n3.3 WOOD I-JOIST \nFLOOR SYSTEMS\nWood I-joist floor systems shall \ncomply with requirements set \nforth in the manufacturer’s code \nevaluation report.\n3.4 WOOD FLOOR TRUSS SYSTEMS\nWood floor truss systems shall be manufactured and installed in accordance with ANSI/TPI 1 National \nDesign Standard for Metal Plate Connected Wood Truss Construction, the truss design drawings, and/or the \nmanufacturer’s code evaluation report.  \n3.5\t FLOOR SHEATHING",
+    "chunk_id": 36,
+    "source_page": 9,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 9
+    }
+  },
+  {
+    "text": "manufacturer’s code evaluation report.  \n3.5\t FLOOR SHEATHING\nFloors shall be sheathed in accordance with the governing building code.\n3.6\t FLOOR BRACING \nBlocking and connections shall be provided at panel edges perpendicular to floor framing members in the first \ntwo truss or joist spaces and shall be spaced at a maximum of 4 feet on center \n(See Figure 9). Nailing requirements are given in Table 2 (See page 7).  \nFigure 8. Cantilever with Loadbearing Wall or Shear Wall",
+    "chunk_id": 37,
+    "source_page": 9,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 9
+    }
+  },
+  {
+    "text": "12\nAMERICAN WOOD COUNCIL\nWALLS\n110 MPH EXPOSURE B WIND ZONE110\n4\t Walls\n4.1 \t GENERAL\nn\t Wall Heights. Loadbearing walls shall  \nnot exceed 10 feet in height. Non- \nloadbearing walls shall not exceed 20 feet  \nin height (See Figure 10).\nn\t Wall Stud Spacing. Wall stud spacing shall  \nnot exceed 24 inches on center (See Figure 10).\nn\t Wall Story Offsets. Upper story wall segments \nshall not be offset from lower story wall segments  \nby more than the depth, d, of the floor framing",
+    "chunk_id": 38,
+    "source_page": 10,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 10
+    }
+  },
+  {
+    "text": "shall not be offset from lower story wall segments  \nby more than the depth, d, of the floor framing \nmembers (See Figures 7 and 8).\n4.2 \tEXTERIOR WALLS\nn\t Wood Studs. Wall studs of #2 or Stud grade  \nlumber (including Douglas Fir-Larch, Hem Fir, \nSouthern Pine, and Spruce-Pine-Fir) shall not \nexceed the maximum lengths specified in  \nTable 5 (See Figure 10). \n \n \n \nFigure 10.  Maximum Wall and Stud Height and Stud Spacing \nTable 5.  Exterior Wall - Wood Studs\nNP= Not Permitted\n2x4\n2x6\n2x8\nStud Grade\n#2",
+    "chunk_id": 39,
+    "source_page": 10,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 10
+    }
+  },
+  {
+    "text": "Table 5.  Exterior Wall - Wood Studs\nNP= Not Permitted\n2x4\n2x6\n2x8\nStud Grade\n#2\nStud\n#2\nStud\n#2\nStud\nExterior Studs\nStud \nSpacing\nMaximum Stud Length \nNon-Loadbearing \nStuds\n12\" o.c.\n12' - 8\"\n11' - 3\"\n19' - 9\"\n17' - 0\"\n19' - 9\"\n19' - 9\"\n16\" o.c.\n11' - 5\"\n9' - 8\"\n18' - 5\"\n14' - 6\"\n19' - 9\"\n18' - 9\"\n24\" o.c.\n9' - 11\"\n7' - 9\"\n15' - 6\"\n11' - 8\"\n19' - 9\"\n15' - 1\"\nLoadbearing Studs \nSupporting Roof and \nCeiling Only\n12\" o.c.\n9' - 9\"\n9' - 9\"\n9' - 9\"\n9' - 9\"\n16\" o.c.\n9' - 9\"\n9' - 8\"\n24\" o.c.\n9' - 9\"\n7' - 9\"",
+    "chunk_id": 40,
+    "source_page": 10,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 10
+    }
+  },
+  {
+    "text": "Supporting Roof and \nCeiling Only\n12\" o.c.\n9' - 9\"\n9' - 9\"\n9' - 9\"\n9' - 9\"\n16\" o.c.\n9' - 9\"\n9' - 8\"\n24\" o.c.\n9' - 9\"\n7' - 9\"\nLoadbearing Studs \nSupporting Roof, \nCeiling, and 1 Floor \nOnly\n12\" o.c.\n9' - 9\"\n9' - 9\"\n9' - 9\"\n9' - 9\"\n16\" o.c.\n9' - 9\"\n9' - 8\"\n24\" o.c.\nNP",
+    "chunk_id": 41,
+    "source_page": 10,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 10
+    }
+  },
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n13\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n4\nWALLS \nn\t Stud Continuity. Studs shall be continuous \nbetween horizontal supports, including \nbut not limited to: headers, girders, \nfloor diaphragm assemblies, ceiling \ndiaphragm assemblies, and roof \ndiaphragm assemblies. Studs in \ngable endwalls adjacent to cathedral \nceilings shall be continuous from \nthe uppermost floor to the ceiling \ndiaphragm or to the roof diaphragm.",
+    "chunk_id": 42,
+    "source_page": 11,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 11
+    }
+  },
+  {
+    "text": "ceilings shall be continuous from \nthe uppermost floor to the ceiling \ndiaphragm or to the roof diaphragm. \nn\t Bracing Gable End Walls. When attic floor \nor ceiling assemblies are used to brace gable \nendwalls, the assemblies shall extend from \nthe endwall for a distance of at least 1/3 of the \nbuilding width when using wood structural panels \nand for a distance of at least 90% of the building width \nwhen using gypsum wallboard ceilings.  Sheathing and fasteners",
+    "chunk_id": 43,
+    "source_page": 11,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 11
+    }
+  },
+  {
+    "text": "and for a distance of at least 90% of the building width \nwhen using gypsum wallboard ceilings.  Sheathing and fasteners \nshall be as specified in Table 2 (See page 7) and Figure 11.\nn\t Top Plates. Double top plates shall be provided at the top of \nall exterior stud walls. The double plates shall overlap at corners and at intersections with other exterior or \ninterior loadbearing walls (See Figure 12). Double top plates shall be lap-spliced with end joints offset in",
+    "chunk_id": 44,
+    "source_page": 11,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 11
+    }
+  },
+  {
+    "text": "interior loadbearing walls (See Figure 12). Double top plates shall be lap-spliced with end joints offset in \naccordance with the minimum requirements given in Table 6 (See Figure 13).\nFigure 13.  \nTop Plate  \nSplice Length\nFigure 12.   \nTop Plate Intersection Detail\nFigure 11. Ceiling Bracing Gable Endwall\nTable 6.  Top Plate Splice\nBuilding Dimension of Wall Containing Top Plate Splice (ft.)\nSplice Length \n(ft.)\n12\n16\n20\n24\n28\n32\n36\n40\n50\n60\n70\n80\nNumber of 16d Common Nails per Each Side of Splice\n2\n4\n6",
+    "chunk_id": 45,
+    "source_page": 11,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 11
+    }
+  },
+  {
+    "text": "Splice Length \n(ft.)\n12\n16\n20\n24\n28\n32\n36\n40\n50\n60\n70\n80\nNumber of 16d Common Nails per Each Side of Splice\n2\n4\n6\n8\n8\nNP\nNP\nNP\nNP\nNP\nNP\nNP\nNP\n4\n4\n6\n7\n8\n10\n12\n14\n16\nNP\nNP\nNP\nNP\n6\n4\n6\n7\n8\n10\n12\n14\n16\n20\n24\nNP\nNP\n8\n4\n6\n7\n8\n10\n12\n14\n16\n20\n24\n28\n32\nNP= Not Permitted",
+    "chunk_id": 46,
+    "source_page": 11,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 11
+    }
+  },
+  {
+    "text": "14\nAMERICAN WOOD COUNCIL\nWALLS\n110 MPH EXPOSURE B WIND ZONE110\nn\t Wall Assembly to Wall Assembly Connections. Story-to-story connections from upper story wall studs \nto lower story wall studs shall be in accordance with the requirements of Table 7 (See Figure 14).  When \nupper story wall studs are not located directly above lower story wall studs, the studs shall be attached to a \ncommon member in the floor assembly with connections in accordance with Table 7.\nTable 7.  Wall Connections at Loadbearing Walls",
+    "chunk_id": 47,
+    "source_page": 12,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 12
+    }
+  },
+  {
+    "text": "Table 7.  Wall Connections at Loadbearing Walls\nRoof Framing Span (ft.)\nLateral\nStud Spacing\n12\n16\n20\n24\n28\n32\n36\nNo. of 16d \nCommon Nails \n(Endnailed)\nUplift (lb.)\n12\" o.c.\n67\n92\n117\n142\n167\n192\n217\n2\n16\" o.c.\n90\n123\n156\n189\n223\n256\n290\n2\n24\" o.c.\n135\n184\n234\n284\n334\n384\n434\n2\nFigure 14.  Story-to-Story Uplift and Lateral Connections\nNOTE\nPlate-to-\nplate nailing \nrequirements in Table 6 \n(page 13) should not be \nless than plate-to-stud \nnailing requirements in \nTables 7 and 8.",
+    "chunk_id": 48,
+    "source_page": 12,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 12
+    }
+  },
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n15\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n4\nWALLS \nn\t Endwall Assemblies. Rake overhang-to-wall, wall-to-wall, and wall-to-foundation connections shall \nbe in accordance with the requirements given in Table 8 (See Figures 15 and 16). Walls which do not \nsupport the roof assembly and are attached in accordance with Table 2 (page 7) need no additional uplift",
+    "chunk_id": 49,
+    "source_page": 13,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 13
+    }
+  },
+  {
+    "text": "support the roof assembly and are attached in accordance with Table 2 (page 7) need no additional uplift \nconnections. Where gable end rake trusses are used, rake truss-to-stud connections shall resist the uplift \nand lateral loads provided by the truss designer.\nTable 8.  Wall Connections for Endwall Assemblies\nWall Height (ft.)\nStud Spacing\nUplift (lb)\n8\n10\n12\n14\n16\n18\n20\nPlate-to-Stud - No. of 16d Common Nails – (Endnailed)\n12\" o.c.\n127\n2\n2\n2\n2\n2\n2\n2\n16\" o.c.\n169\n2\n2\n2\n2\n2\n2\n2\n24\" o.c.\n253\n2\n2\n2\n3\n3\n3\n4",
+    "chunk_id": 50,
+    "source_page": 13,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 13
+    }
+  },
+  {
+    "text": "12\" o.c.\n127\n2\n2\n2\n2\n2\n2\n2\n16\" o.c.\n169\n2\n2\n2\n2\n2\n2\n2\n24\" o.c.\n253\n2\n2\n2\n3\n3\n3\n4\nn\t Wall Openings. Headers shall be provided over all exterior wall openings. Headers shall be supported by \nwall studs, jack studs, hangers, or framing anchors (See Figure 17).\nn\t Headers. Headers shall be sized for gravity loads in accordance with the governing building code.  Exterior \nwall header spans for #2 grade lumber (including Douglas-Fir-Larch, Hem-Fir, Southern Pine, and Spruce-",
+    "chunk_id": 51,
+    "source_page": 13,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 13
+    }
+  },
+  {
+    "text": "wall header spans for #2 grade lumber (including Douglas-Fir-Larch, Hem-Fir, Southern Pine, and Spruce-\nPine-Fir) shall not exceed the limits in Table 9 (See page 16).\nFigure 16.  Rake Truss\nFigure 15.  Full-Height Gable Endwall Stud",
+    "chunk_id": 52,
+    "source_page": 13,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 13
+    }
+  },
+  {
+    "text": "16\nAMERICAN WOOD COUNCIL\nWALLS\n110 MPH EXPOSURE B WIND ZONE110\nn\t Full Height Studs. Full height studs shall meet \nthe same requirements as exterior wall studs \nselected in Table 5 (See page 12). The \nminimum number of full height studs at \neach end of the header shall not be less \nthan half the number of studs replaced \nby the opening, in accordance with Table \n9. Full height studs shall be permitted to \nreplace an equivalent number of jack \nstuds, when adequate gravity connections \nare provided.",
+    "chunk_id": 53,
+    "source_page": 14,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 14
+    }
+  },
+  {
+    "text": "replace an equivalent number of jack \nstuds, when adequate gravity connections \nare provided.\nn\t Window Sill Plates. Maximum spans for \nwindow sill plates used in exterior walls shall \nnot exceed the spans given in Table 9.\nn\t Connections around Wall Openings. \no\t Header and/or Girder to Stud \nConnections. Headers and/or girder to \nstud connections shall be in accordance \nwith the requirements given in Table 9. \nWindow sill plate to stud connections \nshall be in accordance with the",
+    "chunk_id": 54,
+    "source_page": 14,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 14
+    }
+  },
+  {
+    "text": "with the requirements given in Table 9. \nWindow sill plate to stud connections \nshall be in accordance with the \nrequirements given in Table 9.\no\t Top and Bottom Plate to Full Height \nStuds.  Each full height stud shall \nbe connected in accordance with the \nrequirements given in Table 9.\nFigure 17.  Studs and Headers Around Wall Openings\nHeader Span (ft.)\nMinimum Header \nSize\nRequirements at Each End of Header\nNumber of  \nFull-Height Studs\nUplift (lb.)\nLateral (lb.)\nHeaders in Loadbearing Walls\n2\n2 - 2x4\n1",
+    "chunk_id": 55,
+    "source_page": 14,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 14
+    }
+  },
+  {
+    "text": "Number of  \nFull-Height Studs\nUplift (lb.)\nLateral (lb.)\nHeaders in Loadbearing Walls\n2\n2 - 2x4\n1\n277\n132\n3\n2 - 2x4\n2\n416\n198\n4\n2 - 2x4\n2\n554\n264\n5\n2 - 2x4\n3\n693\n330\n6\n2 - 2x6\n3\n831\n396\n7\n2 - 2x8\n3\n970\n462\n8\n2 - 2x12\n3\n1,108\n528\n9\n3 - 2x10\n3\n1,247\n594\n10\n3 - 2x12\n4\n1,385\n660\n11\n4 - 2x10\n4\n1,524\n726\nTable 9.  Wall Openings – Headers in Loadbearing Walls",
+    "chunk_id": 56,
+    "source_page": 14,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 14
+    }
+  },
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n17\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n4\nWALLS \nHeader Span (ft.)\nMinimum Header \nSize\nRequirements at Each End of Header\nNumber of  \nFull-Height Studs\nUplift (lb.)\nLateral (lb.)\nHeaders in Non-Loadbearing Walls and Window Sill Plates1\n2\n1 - 2x4 (flat)\n1\n60\n132\n3\n1 - 2x4 (flat)\n2\n90\n198\n4\n1 - 2x4 (flat)\n2\n120\n264\n5\n1 - 2x4 (flat)\n3\n150\n330\n6\n1 - 2x6 (flat)\n3\n180\n396\n7\n1 - 2x6 (flat)\n3\n210\n462\n8\n1 - 2x6 (flat)\n3\n240\n528\n9",
+    "chunk_id": 57,
+    "source_page": 15,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 15
+    }
+  },
+  {
+    "text": "2\n120\n264\n5\n1 - 2x4 (flat)\n3\n150\n330\n6\n1 - 2x6 (flat)\n3\n180\n396\n7\n1 - 2x6 (flat)\n3\n210\n462\n8\n1 - 2x6 (flat)\n3\n240\n528\n9\n2 - 2x6 (flat)\n3\n270\n594\n10\n2 - 2x6 (flat)\n4\n300\n660\n11\n2 - 2x6 (flat)\n4\n330\n726\n12\n2 - 2x6 (flat)\n5\n360\n792\n \n1 \tFor non-loading bearing walls and window sill plates, 2 -2x4 (flat) can be substituted for 1 -2x6 (flat)\n \n4.3 EXTERIOR WALL SHEATHING\nn\t Exterior Wall Sheathing. Exterior walls shall be sheathed with a minimum of 7/16\" wood structural",
+    "chunk_id": 58,
+    "source_page": 15,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 15
+    }
+  },
+  {
+    "text": "n\t Exterior Wall Sheathing. Exterior walls shall be sheathed with a minimum of 7/16\" wood structural \npanel sheathing or 1/2\" cellulosic fiberboard sheathing and attached per Table 2 (page 7) when studs are \nspaced 16\" o.c. or less. When studs are spaced greater than 16\" o.c., 15/32\" or greater wood structural \npanel sheathing shall be used. The minimum required percentage of full-height sheathing in the wall lines",
+    "chunk_id": 59,
+    "source_page": 15,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 15
+    }
+  },
+  {
+    "text": "panel sheathing shall be used. The minimum required percentage of full-height sheathing in the wall lines \nis provided in Tables 10 and 11 (pages 18 and 19). To meet the requirements for percentage full-height \nsheathing, a full-height wall segment shall not be less than 27-1/2\" in an 8' wall, 31\" in a 9' wall, or 34\" in a \n10' wall (aspect ratio ≤ 3-1/2:1). Exterior sheathing shall be continuous from the bottom plate to the upper \ntop plate, with all panel edges over framing.",
+    "chunk_id": 60,
+    "source_page": 15,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 15
+    }
+  },
+  {
+    "text": "top plate, with all panel edges over framing. \nn\t Hold Downs. Hold downs with a capacity in accordance with Table 10 or 11 (page 18 or 19) are required in the \nfull-height segment at each end of a wall line. When full height segments meet at a corner, a single hold down \nshall be permitted to be used to resist the overturning forces in both directions when sized to resist the larger \nload and the corner framing in the adjoining walls is fastened together to transfer the uplift load (See Figures",
+    "chunk_id": 61,
+    "source_page": 15,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 15
+    }
+  },
+  {
+    "text": "load and the corner framing in the adjoining walls is fastened together to transfer the uplift load (See Figures \n18a and 18b).  A continuous load path must be maintained to the foundation.  Where hold downs on a top \nfloor align with hold downs on a lower floor, the combined capacity of the two hold downs must be resisted by \nanchorage to the foundation.\nn\t Exterior Wall Cladding.  Exterior wall cladding shall be rated for a 110 mph Exposure B 3-second gust",
+    "chunk_id": 62,
+    "source_page": 15,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 15
+    }
+  },
+  {
+    "text": "n\t Exterior Wall Cladding.  Exterior wall cladding shall be rated for a 110 mph Exposure B 3-second gust \nwind speed and be installed per the manufacturer’s instructions.\nTable 9.  Wall Openings – Headers in Non-Loadbearing Walls (continued)",
+    "chunk_id": 63,
+    "source_page": 15,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 15
+    }
+  },
+  {
+    "text": "18\nAMERICAN WOOD COUNCIL\nWALLS\n110 MPH EXPOSURE B WIND ZONE110\nTable 10.  Percentage of Full-Height Sheathing in Minimum Building Dimension (W)\nExterior Sheathing \nType\nWood Structural Panel                   \nSheathing\nFiberboard \nSheathing\n7/16\"\n1/2\"\n25/32\"\nNail Type\n8d \nCommon\n8d \nCommon\n8d \nCommon\n8d \nRoofing\n8d \nRoofing\nEdge Nail Spacing\n6\" o.c.\n4\" o.c.\n3\" o.c.\n3\" o.c.\n3\" o.c.\nField Nail Spacing\n12\" o.c.\n12\" o.c.\n12\" o.c.\n6\" o.c.\n6\" o.c.\nBottom Plate-to-Frame \nShear Connection \n(16d Common Nails)",
+    "chunk_id": 64,
+    "source_page": 16,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 16
+    }
+  },
+  {
+    "text": "Field Nail Spacing\n12\" o.c.\n12\" o.c.\n12\" o.c.\n6\" o.c.\n6\" o.c.\nBottom Plate-to-Frame \nShear Connection \n(16d Common Nails)\n436 plf\n(3 / ft.)\n590 plf\n(3 / ft.)\n730 plf\n(4 / ft.)\n225 plf\n(2 / ft.)\n275 plf\n(2 / ft.)\nHold Down Capacity\n4,360 lb.\n5,900 lb.\n7,300 lb.\n2,250 lb.\n2,750 lb.\nShear Wall Line Beneath\nBuilding Aspect Ratio \n(L/W)\nPercent Full-Height Sheathing on  \nEach Exterior Wall Line\nRoof and Ceiling\n1.00\n33%\n25%\n21%\n55%\n48%\n1.25\n39%\n31%\n26%\n65%\n56%\n1.50\n46%\n36%\n30%\n73%\n64%\n1.75\n51%\n41%\n34%\n80%\n71%",
+    "chunk_id": 65,
+    "source_page": 16,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 16
+    }
+  },
+  {
+    "text": "Roof and Ceiling\n1.00\n33%\n25%\n21%\n55%\n48%\n1.25\n39%\n31%\n26%\n65%\n56%\n1.50\n46%\n36%\n30%\n73%\n64%\n1.75\n51%\n41%\n34%\n80%\n71%\n2.00\n57%\n45%\n38%\n87%\n77%\n2.25\n61%\n49%\n42%\n92%\n83%\n2.50\n66%\n53%\n46%\n98%\n88%\n2.75\n70%\n57%\n49%\nNP\n93%\n3.00\n74%\n61%\n52%\nNP\n97%\nRoof, Ceiling, and One Floor\n1.00\n63%\n51%\n43%\n95%\n85%\n1.25\n73%\n60%\n52%\nNP\n96%\n1.50\n82%\n68%\n59%\nNP\nNP\n1.75\n89%\n75%\n65%\nNP\nNP\n2.00\n96%\n81%\n71%\nNP\nNP\n2.25\nNP\n87%\n77%\nNP\nNP\n2.50\nNP\n92%\n82%\nNP\nNP\n2.75\nNP\n97%\n87%\nNP\nNP\n3.00\nNP\nNP\n91%\nNP\nNP",
+    "chunk_id": 66,
+    "source_page": 16,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 16
+    }
+  },
+  {
+    "text": "75%\n65%\nNP\nNP\n2.00\n96%\n81%\n71%\nNP\nNP\n2.25\nNP\n87%\n77%\nNP\nNP\n2.50\nNP\n92%\n82%\nNP\nNP\n2.75\nNP\n97%\n87%\nNP\nNP\n3.00\nNP\nNP\n91%\nNP\nNP\n \nFigure 18a.  Corner Stud Hold Down Detail – 3 Studs with Blocking\nNP= Not Permitted",
+    "chunk_id": 67,
+    "source_page": 16,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 16
+    }
+  },
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n19\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n4\nWALLS \nExterior Sheathing \nType\nWood Structural Panel                   \nSheathing\nFiberboard \nSheathing\n7/16\"\n1/2\"\n25/32\"\nNail Type\n8d \nCommon\n8d \nCommon\n8d \nCommon\n8d \nRoofing\n8d \nRoofing\nEdge Nail Spacing\n6\" o.c.\n4\" o.c.\n3\" o.c.\n3\" o.c.\n3\" o.c.\nField Nail Spacing\n12\" o.c.\n12\" o.c.\n12\" o.c.\n6\" o.c.\n6\" o.c.\nBottom Plate-to-Floor \nShear Connection \n(16d Common Nails)\n436 plf\n(3 / ft.)",
+    "chunk_id": 68,
+    "source_page": 17,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 17
+    }
+  },
+  {
+    "text": "12\" o.c.\n12\" o.c.\n12\" o.c.\n6\" o.c.\n6\" o.c.\nBottom Plate-to-Floor \nShear Connection \n(16d Common Nails)\n436 plf\n(3 / ft.)\n590 plf\n(3 / ft.)\n730 plf\n(4 / ft.)\n225 plf\n(2 / ft.)\n275 plf\n(2 / ft.)\nHold Down Capacity\n4,360 lb.\n5,900 lb.\n7,300 lb.\n2,250 lb.\n2,750 lb.\nShear Wall Line Beneath\nBuilding Aspect Ratio \n(L/W)\nPercent Full-Height Sheathing on  \nEach Exterior Wall Line\nRoof and Ceiling\n1.00\n33%\n25%\n21%\n55%\n48%\n1.25\n27%\n21%\n17%\n47%\n40%\n1.50\n23%\n18%\n15%\n41%\n35%\n1.75\n20%\n15%\n13%\n36%\n30%\n2.00\n18%\n14%\n11%\n32%",
+    "chunk_id": 69,
+    "source_page": 17,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 17
+    }
+  },
+  {
+    "text": "1.00\n33%\n25%\n21%\n55%\n48%\n1.25\n27%\n21%\n17%\n47%\n40%\n1.50\n23%\n18%\n15%\n41%\n35%\n1.75\n20%\n15%\n13%\n36%\n30%\n2.00\n18%\n14%\n11%\n32%\n27%\n2.25\n16%\n12%\n10%\n29%\n24%\n2.50\n15%\n11%\n9%\n27%\n22%\n2.75\n13%\n10%\n8%\n24%\n20%\n3.00\n12%\n9%\n8%\n23%\n19%\nRoof, Ceiling, and One Floor\n1.00\n63%\n51%\n43%\n95%\n85%\n1.25\n54%\n43%\n36%\n84%\n74%\n1.50\n47%\n37%\n31%\n75%\n66%\n1.75\n42%\n33%\n27%\n68%\n59%\n2.00\n38%\n29%\n24%\n62%\n54%\n2.25\n34%\n26%\n22%\n57%\n49%\n2.50\n31%\n24%\n20%\n53%\n45%\n2.75\n29%\n22%\n18%\n49%\n42%\n3.00\n27%\n20%\n17%\n46%\n39%",
+    "chunk_id": 70,
+    "source_page": 17,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 17
+    }
+  },
+  {
+    "text": "2.00\n38%\n29%\n24%\n62%\n54%\n2.25\n34%\n26%\n22%\n57%\n49%\n2.50\n31%\n24%\n20%\n53%\n45%\n2.75\n29%\n22%\n18%\n49%\n42%\n3.00\n27%\n20%\n17%\n46%\n39%\n \nTable 11.  Percentage of Full-Height Sheathing in Maximum Building Dimension (L)\nFigure 18b.  Corner Stud Hold Down Detail – 4 Studs\nNP= Not Permitted",
+    "chunk_id": 71,
+    "source_page": 17,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 17
+    }
+  },
+  {
+    "text": "20\nAMERICAN WOOD COUNCIL\nROOFS\n110 MPH EXPOSURE B WIND ZONE110\n5 \t Roofs\n5.1  General \nn \t Framing Member Span. Roof framing spans shall not exceed 36 feet (See Figure 19). \nn \t Roof Openings. Roof openings shall not exceed the lesser of 12 feet or 50% of the building dimension  \n(See Figure 6).\nn\t Roof Slope. The roof slope shall not be greater than 12 in 12. \nFigure 19.  Roof Systems\n5.2 Wood Rafter Systems",
+    "chunk_id": 72,
+    "source_page": 18,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 18
+    }
+  },
+  {
+    "text": "n\t Roof Slope. The roof slope shall not be greater than 12 in 12. \nFigure 19.  Roof Systems\n5.2 Wood Rafter Systems \nn\t Rafters. Rafters shall be sized in accordance with the governing building code.  The maximum rafter span \nshall be limited to 3/4 of the span permitted for the 20 psf roof live load case, not to exceed 26 feet.   \nRafters shall be connected to exterior walls in accordance with Table 12 (see page 21).",
+    "chunk_id": 73,
+    "source_page": 18,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 18
+    }
+  },
+  {
+    "text": "Rafters shall be connected to exterior walls in accordance with Table 12 (see page 21).\nn\t Rafter Overhangs. Rafter overhangs shall not exceed the lesser of one-third of the rafter span or 2 feet  \n(See Figure 19).",
+    "chunk_id": 74,
+    "source_page": 18,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 18
+    }
+  },
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n21\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n5\nROOFS\nn\t Rake Overhangs. \no\t Outlookers.  Where structural outlookers are used, the outlookers shall be constructed using 2x4 \npurlins connected in accordance with Table 14. Rake overhangs shall not be spaced more than 24\" or \nexceed the lesser of one-half of the purlin length or 2 feet (See Figure 20).",
+    "chunk_id": 75,
+    "source_page": 19,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 19
+    }
+  },
+  {
+    "text": "exceed the lesser of one-half of the purlin length or 2 feet (See Figure 20).  \no \t Lookout Blocks.  Where non-structural lookout blocks are used, the rake overhang shall not exceed  \n1 foot (See Figures 15 and 16).\nn\t Ridge Construction. \no   Ridge Beam. A ridge beam shall be installed at the roof peak. The ridge beam shall be in accordance \nwith the governing building code. Rafters shall bear directly on the ridge beam or be supported by",
+    "chunk_id": 76,
+    "source_page": 19,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 19
+    }
+  },
+  {
+    "text": "with the governing building code. Rafters shall bear directly on the ridge beam or be supported by \nhangers or framing anchors. Each rafter shall be connected to the ridge beam or to an opposing rafter \n(See Figure 20) with a ridge strap in accordance with the requirements of Table 13 (page 22). Ceiling \njoists or rafter ties shall not be required where a ridge beam is provided. \no\t Ridge Board. A ridge board shall be permitted to be substituted for a ridge beam when roof slopes",
+    "chunk_id": 77,
+    "source_page": 19,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 19
+    }
+  },
+  {
+    "text": "o\t Ridge Board. A ridge board shall be permitted to be substituted for a ridge beam when roof slopes \nequal or exceed 3 in 12. The ridge board shall be at least 1 inch nominal in thickness and not less than \nthe depth of the cut end of the rafter. The rafters shall be placed directly opposite each other. Ceiling \njoists or rafter ties shall be used to provide a continuous tie between exterior walls. Ceiling joist or",
+    "chunk_id": 78,
+    "source_page": 19,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 19
+    }
+  },
+  {
+    "text": "joists or rafter ties shall be used to provide a continuous tie between exterior walls. Ceiling joist or \nrafter tie to rafter connections shall be in accordance with the governing building code. Opposing  \nrafters shall be connected at the ridge with ridge straps in accordance with the requirements in Table 13  \n(See page 22). \no\t Collar Ties. Ridge straps are not required when collar ties of nominal 1x6 or 2x4 lumber are located",
+    "chunk_id": 79,
+    "source_page": 19,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 19
+    }
+  },
+  {
+    "text": "(See page 22). \no\t Collar Ties. Ridge straps are not required when collar ties of nominal 1x6 or 2x4 lumber are located \nin the upper third of the attic space and attached to rafters using 5-10d nails at each end.  For reduced \nrequirements, see the WFCM.\nn\t Ceiling Joists. Ceiling joists shall be sized in accordance with the governing building code. \no  \tOpen (Cathedral) Ceilings. When ceiling joists and rafter ties are omitted and the rafters are used to",
+    "chunk_id": 80,
+    "source_page": 19,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 19
+    }
+  },
+  {
+    "text": "o  \tOpen (Cathedral) Ceilings. When ceiling joists and rafter ties are omitted and the rafters are used to \ncreate an open (cathedral) ceiling, rafter ends shall be supported on bearing walls, headers, or ridge \nbeams. Rafters shall be attached to the wall assembly in accordance with Table 12 and attached to the \nridge beam in accordance with Table 13 (page 22).\nRoof Framing Span (ft.)\nTruss, I-Joist or \nRafter Spacing\n12\n16\n20\n24\n28\n32\n36\nUplift (lb.)\nLateral (lb.)\nShear (lb.)\n12\" o.c.\n127\n152\n177\n202\n227",
+    "chunk_id": 81,
+    "source_page": 19,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 19
+    }
+  },
+  {
+    "text": "Truss, I-Joist or \nRafter Spacing\n12\n16\n20\n24\n28\n32\n36\nUplift (lb.)\nLateral (lb.)\nShear (lb.)\n12\" o.c.\n127\n152\n177\n202\n227\n252\n277\n132\n58\n16\" o.c.\n170\n203\n236\n269\n303\n336\n370\n176\n77\n19.2\" o.c.\n204\n243\n283\n323\n363\n403\n444\n211\n93\n24\" o.c.\n255\n304\n354\n404\n454\n504\n554\n264\n116\nTable 12.  Truss, I-Joist, or Rafter Connections at Loadbearing Walls",
+    "chunk_id": 82,
+    "source_page": 19,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 19
+    }
+  },
+  {
+    "text": "22\nAMERICAN WOOD COUNCIL\nROOFS\n110 MPH EXPOSURE B WIND ZONE110\nFigure 20.  Rafter Outlooker Details\nTable 13.  Ridge Strap Connections\nRoof Pitch\n \n3:12\n4:12\n5:12\n6:12\n7:12-12:12\nRoof Span (ft.)\nRidge Strap Connection Requirement (plf)\n12\n176\n145\n114\n103\n97\n16\n235\n193\n152\n138\n130\n20\n294\n242\n190\n172\n162\n24\n353\n290\n228\n207\n194\n28\n412\n338\n265\n241\n227\n32\n471\n387\n303\n276\n259\n36\n529\n435\n341\n310\n292",
+    "chunk_id": 83,
+    "source_page": 20,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 20
+    }
+  },
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n23\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\n5\nROOFS\nTable 14.  Outlooker Connections at Gravity Non-Loadbearing Walls\nOutlooker Spacing\nOutlooker \nUplift (lb.)\nStud Height (ft.)\n8\n10\n12\n14\n16\n18\n20\nLateral (lb.)\n12\" o.c.\n312\n111\n132\n152\n171\n190\n207\n224\n16\" o.c.\n417\n148\n176\n203\n228\n253\n276\n299\n24\" o.c.\n625\n222\n264\n304\n342\n380\n414\n448\n5.3 \tWood I-Joist Roof Systems",
+    "chunk_id": 84,
+    "source_page": 21,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 21
+    }
+  },
+  {
+    "text": "190\n207\n224\n16\" o.c.\n417\n148\n176\n203\n228\n253\n276\n299\n24\" o.c.\n625\n222\n264\n304\n342\n380\n414\n448\n5.3 \tWood I-Joist Roof Systems\nWood I-joist roof systems shall comply with requirements set forth in the manufacturer’s code evaluation \nreport.  I-joist roof framing members shall be connected to exterior walls in accordance with Table 12 (page 21) \nand to the ridge beam in accordance with Table 13.\n5.4 Wood Roof Truss Systems",
+    "chunk_id": 85,
+    "source_page": 21,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 21
+    }
+  },
+  {
+    "text": "and to the ridge beam in accordance with Table 13.\n5.4 Wood Roof Truss Systems \nWood roof truss systems shall be designed, manufactured, and installed in accordance ANSI/TPI 1 National \nDesign Standard for Metal Plate Connected Wood Truss Construction, the truss design drawings, and/or the \nmanufacturer’s code evaluation report.  Roof trusses shall be connected to exterior walls in accordance with \nTable 12 (page 21).\n5.5 \tRoof Sheathing",
+    "chunk_id": 86,
+    "source_page": 21,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 21
+    }
+  },
+  {
+    "text": "Table 12 (page 21).\n5.5 \tRoof Sheathing \nRoofs shall be sheathed with a minimum of 3/8\" wood structural panel sheathing and be attached in accordance \nwith Table 2 (page 7).\n5.6 \tRoof Bracing Endwall \nBlocking and connections shall be provided at panel edges perpendicular to roof framing members in the first \ntwo truss or joist spaces and shall be spaced at a maximum of 4 feet on center. Nailing requirements are given \nin Table 2 (page 7). See Figure 9.",
+    "chunk_id": 87,
+    "source_page": 21,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 21
+    }
+  },
+  {
+    "text": "in Table 2 (page 7). See Figure 9. \nn\t EXCEPTION: When an attic floor or ceiling diaphragm is used to brace the gable endwall or when a hip \nroof system is used, additional roof diaphragm blocking is not required.",
+    "chunk_id": 88,
+    "source_page": 21,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 21
+    }
+  },
+  {
+    "text": "24\nAMERICAN WOOD COUNCIL\nGLOSSARY\n110 MPH EXPOSURE B WIND ZONE110\nGlossary of Terms\nThe following definitions describe some of the terminology used in this Guide.\nAspect Ratio. The ratio of building length dimension (L) to the building width dimension (W). \nBlocking. Wood member which provides edge support for sheathing or provides load path continuity such as \nbelow offset walls, offset floors, and between cantilever members.",
+    "chunk_id": 89,
+    "source_page": 22,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 22
+    }
+  },
+  {
+    "text": "below offset walls, offset floors, and between cantilever members.\nBottom Plate. A horizontal wood member attached to the bottom of a frame wall and connected to floor joists, \ngirders, or other members.\nCantilever. The unsupported portion of a beam which extends beyond a support.\nCeiling Joist. A horizontal structural framing member which supports ceiling and/or attic loads.\nCladding. Exterior structural elements that receive loads normal to their surface.",
+    "chunk_id": 90,
+    "source_page": 22,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 22
+    }
+  },
+  {
+    "text": "Cladding. Exterior structural elements that receive loads normal to their surface.\nContinuous Load Path. The interconnection of all framing elements of the lateral and vertical force resisting \nsystems, which transfers lateral and vertical forces to the foundation.\nEndwall. The exterior wall of a building perpendicular to the roof ridge and parallel to roof rafters or trusses.\nFloor Joist. A horizontal structural framing member which supports floor loads.",
+    "chunk_id": 91,
+    "source_page": 22,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 22
+    }
+  },
+  {
+    "text": "Floor Joist. A horizontal structural framing member which supports floor loads.\nFoundation Wall. The vertical structural wall unit attached to the foundation which supports vertical and \nlateral loads.\nGable. The triangular portion of the endwall beneath a dual-slope, pitched, or mono-slope roof. \nHeader. A beam used over wall or roof openings to carry loads across the opening.\nHold Down. A connector device used to provide overturning restraint by resisting uplift of",
+    "chunk_id": 92,
+    "source_page": 22,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 22
+    }
+  },
+  {
+    "text": "Hold Down. A connector device used to provide overturning restraint by resisting uplift of  \nthe chords of shear walls. (See Figures 18a and 18b)\nI-Joist. A structural member manufactured using sawn or structural composite lumber flanges and structural \npanel webs, bonded together with exterior exposure adhesives, forming an  I” cross-sectional shape.\nJack Rafter. A rafter that spans from a hip or valley rafter or beam to a wall plate or ridge, respectively.",
+    "chunk_id": 93,
+    "source_page": 22,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 22
+    }
+  },
+  {
+    "text": "Jack Rafter. A rafter that spans from a hip or valley rafter or beam to a wall plate or ridge, respectively.\nJack Studs. A vertical structural element which does not span the full height of the wall and supports vertical \nloads.\nMean Roof Height. The distance from average grade to the average roof elevation (See Figure 2).\nMono-slope Roof. A roof with constant slope in one direction.\nPerforated Shear Wall. A shear wall composed of shear wall segments with overturning restraint provided",
+    "chunk_id": 94,
+    "source_page": 22,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 22
+    }
+  },
+  {
+    "text": "Perforated Shear Wall. A shear wall composed of shear wall segments with overturning restraint provided \nat each end of the shear wall, but which does not require special connections for force transfer around wall \nopenings (See Tables 10-11 on pages 18 and 19).\nPitched Roof. A roof with one or more sloping surfaces.\nRafter. A horizontal or sloped structural framing member that supports roof loads (See Figure 19).",
+    "chunk_id": 95,
+    "source_page": 22,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 22
+    }
+  },
+  {
+    "text": "AMERICAN FOREST & PAPER ASSOCIATION\n25\n110\nGuide to Wood Construction in High Wind Areas\n110 MPH EXPOSURE B WIND ZONE\nGLOSSARY\nRafter Overhang (Eave). The horizontal projection of a rafter measured from the outside face of the wall to \nthe outside edge of the rafter.\nRafter Tie. A structural framing member located in the lower third of the attic space that ties rafters together to \nresist thrust from gravity loads on the roof.",
+    "chunk_id": 96,
+    "source_page": 23,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 23
+    }
+  },
+  {
+    "text": "resist thrust from gravity loads on the roof.\nRake Overhang. The horizontal projection of the roof measured from the outside face of the gable endwall to \nthe outside edge of the roof (See Figure 16).\nRidge. The horizontal line formed by the joining of the top edges of two sloping roof surfaces.\nRidge Beam. A structural member used at the ridge of a roof to support the ends of roof rafters and transfer \nroof loads to supports.",
+    "chunk_id": 97,
+    "source_page": 23,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 23
+    }
+  },
+  {
+    "text": "roof loads to supports.\nRidge Board. A non-structural member used at the ridge of a roof to provide a common nailing surface and \npoint of bearing for opposing roof rafters.\nRidge Strap. A metal connector that fastens opposing rafters together to resist roof suction loads at the ridge.\nRoof Span. The distance between the outside of exterior walls supporting the roof/ceiling or truss assembly.\nSetback. The offset distance of a wall on a floor system, measured from the support towards mid-span of the",
+    "chunk_id": 98,
+    "source_page": 23,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 23
+    }
+  },
+  {
+    "text": "Setback. The offset distance of a wall on a floor system, measured from the support towards mid-span of the \nfloor system.\nShear Wall. A vertical structural unit composed of one or more shear wall segments in one plane.\nShear Wall Line. Shear walls which are not offset by more than 4 feet horizontally from any other shear wall \nmay be considered in the same shear wall line.\nShear Wall Plan Offset. The distance from a shear wall to the nearest parallel shear wall.",
+    "chunk_id": 99,
+    "source_page": 23,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 23
+    }
+  },
+  {
+    "text": "Shear Wall Plan Offset. The distance from a shear wall to the nearest parallel shear wall.\nSheathing. The structural covering used directly over framing members, such as studs, joists, or rafters, which \ntransfers perpendicular loads to the framing material.\nSill Plate. A horizontal wood member anchored to the foundation and supporting floor joists.\nSlab-On-Grade. The concrete slab that serves as the floor for the first story, upon which the first story framed \nwalls are attached.",
+    "chunk_id": 100,
+    "source_page": 23,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 23
+    }
+  },
+  {
+    "text": "walls are attached.\nSpan. The distance between face of supports, plus ½ the required bearing length at each end.\nStory. The portion of a structure included between the upper surface of a floor and the upper surface of the \nfloor or roof next above.\nStud. Vertical structural element of wall assemblies which transfers vertical and/or lateral loads.\nTop Plate(s). A horizontal wood member(s) attached to the top of a frame wall and supporting trusses, I-joists,",
+    "chunk_id": 101,
+    "source_page": 23,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 23
+    }
+  },
+  {
+    "text": "Top Plate(s). A horizontal wood member(s) attached to the top of a frame wall and supporting trusses, I-joists, \nrafters, floor joists, ceiling joists, or other members.\nTruss. An engineered structural component, assembled from wood members, metal connector plates, or other \nmechanical fasteners, designed to carry its own weight and superimposed design loads. The truss members form \na semi-rigid structural framework and are assembled such that the members form triangles. Variations include",
+    "chunk_id": 102,
+    "source_page": 23,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 23
+    }
+  },
+  {
+    "text": "a semi-rigid structural framework and are assembled such that the members form triangles. Variations include \nmetal web trusses, metal tube trusses, and plywood gusset trusses.\nVertical Floor Offset. The distance between two adjoining floor assemblies which do not lie in the same \nhorizontal plane.",
+    "chunk_id": 103,
+    "source_page": 23,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 23
+    }
+  },
+  {
+    "text": "26\nAMERICAN WOOD COUNCIL\nGLOSSARY\n110 MPH EXPOSURE B WIND ZONE110\nWind Exposure \nExposure B. Urban and suburban areas, wooded areas, or other terrain with numerous closely spaced \nobstructions having the size of single family dwellings or larger. Exposure B shall be assumed unless the \nsite meets the definition of another type exposure.\nExposure C. Open terrain with scattered obstructions including surface undulations or other irregularities",
+    "chunk_id": 104,
+    "source_page": 24,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 24
+    }
+  },
+  {
+    "text": "Exposure C. Open terrain with scattered obstructions including surface undulations or other irregularities \nhaving heights generally less than 30 feet extending more than 1500 feet from the building site in any \nfull quadrant. Exposure C extends into adjacent Exposure B type terrain in the downwind direction for a \ndistance of 1500 feet or 10 times the height of the building or structure, whichever is greater. This category \nincludes open country and grasslands, and open water exposure of less than 1 mile.",
+    "chunk_id": 105,
+    "source_page": 24,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 24
+    }
+  },
+  {
+    "text": "includes open country and grasslands, and open water exposure of less than 1 mile.\nExposure D. Flat unobstructed areas exposed to wind flowing over open water for a distance of at least 1 \nmile. This exposure shall apply only to those buildings and other structures exposed to the wind coming \nfrom over the water. Exposure D extends inland from the shoreline a distance of 1500 feet or 10 times the \nheight of the building or structure, whichever is greater.",
+    "chunk_id": 106,
+    "source_page": 24,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 24
+    }
+  },
+  {
+    "text": "height of the building or structure, whichever is greater.\nWindow Sill Plate. A horizontal framing member below an opening.",
+    "chunk_id": 107,
+    "source_page": 24,
+    "char_start": null,
+    "char_end": null,
+    "metadata": {
+      "page": 24
+    }
+  }
+]
