@@ -86,7 +86,11 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 2
+      "page": 2,
+      "figures": [
+        "page_2_fig_0.jpeg",
+        "page_2_fig_1.jpeg"
+      ]
     }
   },
   {
@@ -96,7 +100,11 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 2
+      "page": 2,
+      "figures": [
+        "page_2_fig_0.jpeg",
+        "page_2_fig_1.jpeg"
+      ]
     }
   },
   {
@@ -106,7 +114,11 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 2
+      "page": 2,
+      "figures": [
+        "page_2_fig_0.jpeg",
+        "page_2_fig_1.jpeg"
+      ]
     }
   },
   {
@@ -116,7 +128,11 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 2
+      "page": 2,
+      "figures": [
+        "page_2_fig_0.jpeg",
+        "page_2_fig_1.jpeg"
+      ]
     }
   },
   {
@@ -126,7 +142,11 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 2
+      "page": 2,
+      "figures": [
+        "page_2_fig_0.jpeg",
+        "page_2_fig_1.jpeg"
+      ]
     }
   },
   {
@@ -136,7 +156,11 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 2
+      "page": 2,
+      "figures": [
+        "page_2_fig_0.jpeg",
+        "page_2_fig_1.jpeg"
+      ]
     }
   },
   {
@@ -146,7 +170,11 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 2
+      "page": 2,
+      "figures": [
+        "page_2_fig_0.jpeg",
+        "page_2_fig_1.jpeg"
+      ]
     }
   },
   {
@@ -156,7 +184,12 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 3
+      "page": 3,
+      "figures": [
+        "page_3_fig_0.png",
+        "page_3_fig_1.jpeg",
+        "page_3_fig_2.jpeg"
+      ]
     }
   },
   {
@@ -166,7 +199,12 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 3
+      "page": 3,
+      "figures": [
+        "page_3_fig_0.png",
+        "page_3_fig_1.jpeg",
+        "page_3_fig_2.jpeg"
+      ]
     }
   },
   {
@@ -176,7 +214,12 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 3
+      "page": 3,
+      "figures": [
+        "page_3_fig_0.png",
+        "page_3_fig_1.jpeg",
+        "page_3_fig_2.jpeg"
+      ]
     }
   },
   {
@@ -186,7 +229,12 @@
     "char_start": null,
     "char_end": null,
     "metadata": {
-      "page": 3
+      "page": 3,
+      "figures": [
+        "page_3_fig_0.png",
+        "page_3_fig_1.jpeg",
+        "page_3_fig_2.jpeg"
+      ]
     }
   }
 ]

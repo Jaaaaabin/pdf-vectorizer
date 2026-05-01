@@ -14,7 +14,7 @@ from .configuration import (
 )
 from .pdf_extractor import extract_text_from_pdf
 from .text_chunker import chunk_text, Chunk, get_chunk_statistics
-from .vectorizer import vectorize_chunks, save_embeddings
+from .text_vectorizer import vectorize_chunks, save_embeddings
 from .utils import (
     list_pdf_files,
     print_info,
@@ -58,11 +58,13 @@ class PDFVectorizationPipeline:
                 pages = json.loads(text_path.read_text(encoding="utf-8"))
             else:
                 print_info("  Step 1/3: Extracting text...")
+                figures_dir = out_dir / "figures" if self.extraction_config.get("extract_figures", True) else None
                 pages = extract_text_from_pdf(
                     pdf_path,
                     method=self.extraction_config.get("method", "pymupdf"),
-                    ocr_enabled=self.extraction_config.get("ocr_enabled", False),
-                    ocr_language=self.extraction_config.get("ocr_language", "eng"),
+                    figures_dir=figures_dir,
+                    min_figure_px=self.extraction_config.get("min_figure_px", 50),
+                    extract_tables=self.extraction_config.get("extract_tables", False),
                 )
                 text_path.write_text(json.dumps(pages, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -137,7 +139,4 @@ class PDFVectorizationPipeline:
         if ok < len(results):
             print_error(f"{len(results) - ok} failed")
 
-        summary_path = self.paths["processed"] / "summary.json"
-        summary_path.write_text(json.dumps(results, indent=2), encoding="utf-8")
-        print_info(f"Summary: {summary_path}")
         return results

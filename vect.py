@@ -26,7 +26,7 @@ def run_embed(args):
 
     print_info("Loading ML stack (torch + sentence-transformers) — this takes ~20s on first call...")
     from src.text_chunker import Chunk
-    from src.vectorizer import vectorize_chunks, save_embeddings
+    from src.text_vectorizer import vectorize_chunks, save_embeddings
     print_info("ML stack ready.")
 
     chunks = [Chunk(**d) for d in chunks_raw]

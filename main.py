@@ -25,12 +25,14 @@ def main():
     p.add_argument("-o", "--output", type=Path, help="Override output path (single file only)")
 
     p = sub.add_parser("chunk", help="Chunk text.json → chunks.json")
-    p.add_argument("input", type=Path, help="Original PDF path (used to locate text.json)")
+    p.add_argument("input", type=Path, help="PDF file or directory (used to locate text.json)")
     p.add_argument("--config", type=Path)
+    p.add_argument("--recursive", "-r", action="store_true")
 
     p = sub.add_parser("embed", help="Embed chunks.json → embeddings.npz")
-    p.add_argument("input", type=Path, help="Original PDF path (used to locate chunks.json)")
+    p.add_argument("input", type=Path, help="PDF file or directory (used to locate chunks.json)")
     p.add_argument("--config", type=Path)
+    p.add_argument("--recursive", "-r", action="store_true")
 
     p = sub.add_parser("run", help="Full pipeline: extract → chunk → embed")
     p.add_argument("input", type=Path, help="PDF file or directory")
@@ -49,8 +51,8 @@ def main():
         return {
             "check":   run_check,
             "extract": _run_extract_cmd,
-            "chunk":   run_chunk,
-            "embed":   run_embed,
+            "chunk":   _run_chunk_cmd,
+            "embed":   _run_embed_cmd,
             "run":     run_pipeline,
             "info":    run_info,
         }[args.command](args)
@@ -76,6 +78,50 @@ def _run_extract_cmd(args):
             if run_extract(single) == 0:
                 ok += 1
         print_success(f"\nExtracted {ok}/{len(pdfs)} PDFs")
+        return 0 if ok == len(pdfs) else 1
+    print_error(f"Path not found: {input_path}")
+    return 1
+
+
+def _run_chunk_cmd(args):
+    import types
+    input_path = args.input
+    if input_path.is_file():
+        return run_chunk(args)
+    if input_path.is_dir():
+        pdfs = sorted(input_path.rglob("*.pdf") if args.recursive else input_path.glob("*.pdf"))
+        if not pdfs:
+            print_error(f"No PDFs found in {input_path}")
+            return 1
+        ok = 0
+        for pdf in pdfs:
+            print_info(f"\n--- {pdf.name} ---")
+            single = types.SimpleNamespace(input=pdf, config=args.config)
+            if run_chunk(single) == 0:
+                ok += 1
+        print_success(f"\nChunked {ok}/{len(pdfs)} PDFs")
+        return 0 if ok == len(pdfs) else 1
+    print_error(f"Path not found: {input_path}")
+    return 1
+
+
+def _run_embed_cmd(args):
+    import types
+    input_path = args.input
+    if input_path.is_file():
+        return run_embed(args)
+    if input_path.is_dir():
+        pdfs = sorted(input_path.rglob("*.pdf") if args.recursive else input_path.glob("*.pdf"))
+        if not pdfs:
+            print_error(f"No PDFs found in {input_path}")
+            return 1
+        ok = 0
+        for pdf in pdfs:
+            print_info(f"\n--- {pdf.name} ---")
+            single = types.SimpleNamespace(input=pdf, config=args.config)
+            if run_embed(single) == 0:
+                ok += 1
+        print_success(f"\nEmbedded {ok}/{len(pdfs)} PDFs")
         return 0 if ok == len(pdfs) else 1
     print_error(f"Path not found: {input_path}")
     return 1

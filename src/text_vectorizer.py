@@ -1,4 +1,4 @@
-# src/vectorizer.py
+# src/text_vectorizer.py
 # Text vectorization using various embedding models.
 #   vectorize_chunks           – main entry point for vectorization
 #   SentenceTransformerVectorizer – local embeddings (sentence-transformers)
