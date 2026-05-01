@@ -18,10 +18,11 @@ def main():
     p = sub.add_parser("check", help="Verify imports and config")
     p.add_argument("--config", type=Path)
 
-    p = sub.add_parser("extract", help="Extract text from a PDF (no chunking/embedding)")
+    p = sub.add_parser("extract", help="Extract text from a PDF or directory")
     p.add_argument("input", type=Path)
     p.add_argument("--config", type=Path)
-    p.add_argument("-o", "--output", type=Path, help="Override output path")
+    p.add_argument("--recursive", "-r", action="store_true")
+    p.add_argument("-o", "--output", type=Path, help="Override output path (single file only)")
 
     p = sub.add_parser("chunk", help="Chunk text.json → chunks.json")
     p.add_argument("input", type=Path, help="Original PDF path (used to locate text.json)")
@@ -47,7 +48,7 @@ def main():
     try:
         return {
             "check":   run_check,
-            "extract": run_extract,
+            "extract": _run_extract_cmd,
             "chunk":   run_chunk,
             "embed":   run_embed,
             "run":     run_pipeline,
@@ -56,6 +57,28 @@ def main():
     except Exception as e:
         print_error(f"Error: {e}")
         return 1
+
+
+def _run_extract_cmd(args):
+    import types
+    input_path = args.input
+    if input_path.is_file():
+        return run_extract(args)
+    if input_path.is_dir():
+        pdfs = sorted(input_path.rglob("*.pdf") if args.recursive else input_path.glob("*.pdf"))
+        if not pdfs:
+            print_error(f"No PDFs found in {input_path}")
+            return 1
+        ok = 0
+        for pdf in pdfs:
+            print_info(f"\n--- {pdf.name} ---")
+            single = types.SimpleNamespace(input=pdf, config=args.config, output=None)
+            if run_extract(single) == 0:
+                ok += 1
+        print_success(f"\nExtracted {ok}/{len(pdfs)} PDFs")
+        return 0 if ok == len(pdfs) else 1
+    print_error(f"Path not found: {input_path}")
+    return 1
 
 
 def run_check(args):

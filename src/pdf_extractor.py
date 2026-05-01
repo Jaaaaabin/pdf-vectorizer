@@ -1,9 +1,8 @@
 # src/pdf_extractor.py
 # PDF text extraction with support for multiple methods.
 #   extract_text_from_pdf  – main entry point, delegates to appropriate method
-#   extract_with_pymupdf   – fast extraction using PyMuPDF
+#   extract_with_pymupdf   – fast extraction using PyMuPDF; saves figures to figures_dir
 #   extract_with_pdfplumber – better for tables and structured content
-#   extract_with_ocr       – OCR for scanned/image PDFs
 
 from pathlib import Path
 from typing import List, Dict, Any, Optional
@@ -15,14 +14,7 @@ try:
 except ImportError:
     PDFPLUMBER_AVAILABLE = False
 
-try:
-    import pytesseract
-    from pdf2image import convert_from_path
-    OCR_AVAILABLE = True
-except ImportError:
-    OCR_AVAILABLE = False
-
-from .utils.cli_utils import print_warning, spinner, progress_iter
+from .utils.cli_utils import print_warning, progress_iter
 
 
 class PDFExtractionError(Exception):
@@ -33,70 +25,50 @@ class PDFExtractionError(Exception):
 def extract_text_from_pdf(
     pdf_path: Path,
     method: str = "pymupdf",
-    ocr_enabled: bool = False,
-    ocr_language: str = "eng",
-    extract_images: bool = False,
+    figures_dir: Optional[Path] = None,
+    min_figure_px: int = 50,
     extract_tables: bool = False,
 ) -> List[Dict[str, Any]]:
-    """Extract text from PDF using specified method.
-    
+    """Extract text (and optionally figures) from a PDF.
+
     Args:
         pdf_path: Path to PDF file
-        method: Extraction method ('pymupdf', 'pdfplumber', 'ocr')
-        ocr_enabled: Enable OCR fallback for scanned pages
-        ocr_language: Tesseract language code
-        extract_images: Extract embedded images
-        extract_tables: Extract tables separately
-    
+        method: Extraction method ('pymupdf', 'pdfplumber')
+        figures_dir: Directory to save extracted images; None to skip
+        min_figure_px: Minimum width and height in pixels; smaller images are skipped
+        extract_tables: Extract tables separately (pdfplumber only)
+
     Returns:
         List of page dictionaries with text and metadata
-        
+
     Raises:
         PDFExtractionError: If extraction fails
     """
     if not pdf_path.exists():
         raise FileNotFoundError(f"PDF not found: {pdf_path}")
-    
-    # Choose extraction method
+
     if method == "pymupdf":
-        return extract_with_pymupdf(
-            pdf_path,
-            ocr_fallback=ocr_enabled,
-            ocr_language=ocr_language,
-            extract_images=extract_images,
-        )
+        return extract_with_pymupdf(pdf_path, figures_dir=figures_dir, min_figure_px=min_figure_px)
     elif method == "pdfplumber":
         if not PDFPLUMBER_AVAILABLE:
             print_warning("pdfplumber not installed, falling back to pymupdf")
-            return extract_with_pymupdf(pdf_path)
-        return extract_with_pdfplumber(
-            pdf_path,
-            extract_tables=extract_tables,
-        )
-    elif method == "ocr":
-        if not OCR_AVAILABLE:
-            raise PDFExtractionError(
-                "OCR not available. Install: uv add pytesseract pdf2image"
-            )
-        return extract_with_ocr(pdf_path, language=ocr_language)
+            return extract_with_pymupdf(pdf_path, figures_dir=figures_dir, min_figure_px=min_figure_px)
+        return extract_with_pdfplumber(pdf_path, extract_tables=extract_tables)
     else:
         raise ValueError(f"Unknown extraction method: {method}")
 
 
 def extract_with_pymupdf(
     pdf_path: Path,
-    ocr_fallback: bool = False,
-    ocr_language: str = "eng",
-    extract_images: bool = False,
+    figures_dir: Optional[Path] = None,
+    min_figure_px: int = 50,
 ) -> List[Dict[str, Any]]:
     """Extract text using PyMuPDF (fastest method).
-    
+
     Args:
         pdf_path: Path to PDF file
-        ocr_fallback: Use OCR if page has no text
-        ocr_language: Tesseract language
-        extract_images: Extract embedded images
-    
+        figures_dir: Directory to save embedded images; None to skip
+
     Returns:
         List of page data dictionaries
     """
@@ -104,18 +76,13 @@ def extract_with_pymupdf(
         doc = fitz.open(pdf_path)
     except Exception as e:
         raise PDFExtractionError(f"Failed to open PDF: {e}")
-    
+
     pages = []
 
     for page_num in progress_iter(range(len(doc)), total=len(doc), desc="Extracting pages (pymupdf)"):
         page = doc[page_num]
-
         text = page.get_text()
-        
-        # OCR fallback for scanned pages
-        if ocr_fallback and not text.strip() and OCR_AVAILABLE:
-            text = _ocr_page_pymupdf(page, ocr_language)
-        
+
         page_data = {
             "page_number": page_num + 1,
             "text": text,
@@ -123,22 +90,29 @@ def extract_with_pymupdf(
             "metadata": {
                 "width": page.rect.width,
                 "height": page.rect.height,
-            }
+            },
         }
-        
-        # Extract images if requested
-        if extract_images:
-            images = []
-            for img_index, img in enumerate(page.get_images()):
+
+        if figures_dir is not None:
+            saved = []
+            for img_index, img in enumerate(page.get_images(full=True)):
                 xref = img[0]
-                images.append({
-                    "index": img_index,
-                    "xref": xref,
-                })
-            page_data["images"] = images
-        
+                try:
+                    base_image = doc.extract_image(xref)
+                    if base_image["width"] < min_figure_px or base_image["height"] < min_figure_px:
+                        continue
+                    ext = base_image["ext"]
+                    fname = f"page_{page_num + 1}_fig_{img_index}.{ext}"
+                    figures_dir.mkdir(parents=True, exist_ok=True)
+                    (figures_dir / fname).write_bytes(base_image["image"])
+                    saved.append(fname)
+                except Exception as e:
+                    print_warning(f"  skipped image xref={xref} page={page_num + 1}: {e}")
+            if saved:
+                page_data["figures"] = saved
+
         pages.append(page_data)
-    
+
     doc.close()
     return pages
 
@@ -184,65 +158,6 @@ def extract_with_pdfplumber(
             return pages
     except Exception as e:
         raise PDFExtractionError(f"pdfplumber extraction failed: {e}")
-
-
-def extract_with_ocr(
-    pdf_path: Path,
-    language: str = "eng",
-    dpi: int = 300,
-) -> List[Dict[str, Any]]:
-    """Extract text using OCR (for scanned PDFs).
-    
-    Args:
-        pdf_path: Path to PDF file
-        language: Tesseract language code
-        dpi: Image DPI for conversion
-    
-    Returns:
-        List of page data dictionaries
-    """
-    try:
-        # Convert PDF to images
-        with spinner(f"Converting PDF to images (DPI={dpi})..."):
-            images = convert_from_path(str(pdf_path), dpi=dpi)
-        
-        pages = []
-        
-        for page_num, image in progress_iter(enumerate(images), total=len(images), desc="OCR pages"):
-            text = pytesseract.image_to_string(image, lang=language)
-            pages.append({
-                "page_number": page_num + 1,
-                "text": text,
-                "char_count": len(text),
-                "metadata": {
-                    "ocr": True,
-                    "language": language,
-                    "dpi": dpi,
-                }
-            })
-        
-        return pages
-    except Exception as e:
-        raise PDFExtractionError(f"OCR extraction failed: {e}")
-
-
-def _ocr_page_pymupdf(page, language: str = "eng") -> str:
-    """OCR a single PyMuPDF page."""
-    try:
-        # Render page as image
-        pix = page.get_pixmap(dpi=300)
-        img_bytes = pix.tobytes("png")
-        
-        # Convert to PIL Image for Tesseract
-        from PIL import Image
-        import io
-        image = Image.open(io.BytesIO(img_bytes))
-        
-        # Run OCR
-        text = pytesseract.image_to_string(image, lang=language)
-        return text
-    except Exception:
-        return ""
 
 
 def get_pdf_info(pdf_path: Path) -> Dict[str, Any]:

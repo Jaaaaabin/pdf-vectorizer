@@ -27,22 +27,28 @@ def run_extract(args):
     print_info(f"Pages : {info.get('pages', '?')}")
     print_info(f"Method: {ext_cfg.get('method', 'pymupdf')}")
 
+    processed_root = Path(get_paths_config(config).get("processed", "data/processed"))
+    figures_dir = processed_root / pdf_path.stem / "figures"
+
     pages = extract_text_from_pdf(
         pdf_path,
         method=ext_cfg.get("method", "pymupdf"),
-        ocr_enabled=ext_cfg.get("ocr_enabled", False),
+        figures_dir=figures_dir,
+        min_figure_px=ext_cfg.get("min_figure_px", 50),
     )
 
     total_chars = sum(len(p.get("text", "")) for p in pages)
     print_success(f"Extracted {len(pages)} pages, {total_chars:,} characters")
 
-    out_path = args.output or (
-        Path(get_paths_config(config).get("processed", "data/processed"))
-        / pdf_path.stem / "text.json"
-    )
+    out_path = args.output or (processed_root / pdf_path.stem / "text.json")
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(pages, indent=2, ensure_ascii=False), encoding="utf-8")
     print_info(f"Saved to: {out_path}")
+
+    fig_count = sum(len(p.get("figures", [])) for p in pages)
+    if fig_count:
+        print_success(f"Saved {fig_count} figure(s) to: {out_path.parent / 'figures'}")
+
     return 0
 
 

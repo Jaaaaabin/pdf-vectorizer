@@ -8,9 +8,8 @@ data:
 extraction:
   method: pymupdf                # pymupdf: fast, good for digital PDFs
                                  # pdfplumber: better for tables
-                                 # ocr: for scanned/image-only PDFs (requires tesseract)
-  ocr_enabled: false             # if true, pages with no text fall back to OCR automatically
-  ocr_language: eng              # tesseract language code (eng, deu, fra, …)
+  min_figure_px: 100              # images smaller than this in either dimension are skipped
+                                 # catches decorative pixels, icons, and PDF artifacts
 
 chunking:
   strategy: recursive            # recursive: splits on paragraphs → lines → sentences → words

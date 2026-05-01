@@ -15,7 +15,11 @@
     "metadata": {
       "width": 612.0,
       "height": 792.0
-    }
+    },
+    "figures": [
+      "page_2_fig_0.jpeg",
+      "page_2_fig_1.jpeg"
+    ]
   },
   {
     "page_number": 3,
@@ -24,6 +28,11 @@
     "metadata": {
       "width": 612.0,
       "height": 792.0
-    }
+    },
+    "figures": [
+      "page_3_fig_0.png",
+      "page_3_fig_1.jpeg",
+      "page_3_fig_2.jpeg"
+    ]
   }
 ]

@@ -126,25 +126,25 @@ class RecursiveChunker:
         for page in pages:
             page_num = page.get("page_number")
             text = page.get("text", "")
-            
+            figures = page.get("figures", [])
+
             if not text.strip():
                 continue
-            
-            # Split text
+
             if self.splitter:
-                # Use langchain splitter
                 splits = self.splitter.split_text(text)
             else:
-                # Use custom implementation
                 splits = self._split_text_recursive(text)
-            
-            # Create chunk objects
+
             for split in splits:
+                meta = {"page": page_num}
+                if figures:
+                    meta["figures"] = figures
                 chunks.append(Chunk(
                     text=split,
                     chunk_id=chunk_id,
                     source_page=page_num,
-                    metadata={"page": page_num},
+                    metadata=meta,
                 ))
                 chunk_id += 1
         
@@ -207,23 +207,26 @@ class FixedSizeChunker:
         for page in pages:
             page_num = page.get("page_number")
             text = page.get("text", "")
-            
+            figures = page.get("figures", [])
+
             if not text.strip():
                 continue
-            
-            # Create fixed-size chunks
+
             step = self.chunk_size - self.chunk_overlap
             for i in range(0, len(text), step):
                 chunk_text = text[i:i + self.chunk_size].strip()
-                
+
                 if chunk_text:
+                    meta = {"page": page_num}
+                    if figures:
+                        meta["figures"] = figures
                     chunks.append(Chunk(
                         text=chunk_text,
                         chunk_id=chunk_id,
                         source_page=page_num,
                         char_start=i,
                         char_end=i + len(chunk_text),
-                        metadata={"page": page_num},
+                        metadata=meta,
                     ))
                     chunk_id += 1
         
